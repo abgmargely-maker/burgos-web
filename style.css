@@ -83,11 +83,59 @@ header{
   align-items:center;
   justify-content:space-between;
 
+  gap:20px;
+
   padding:20px 0;
+}
+
+/* MOBILE HEADER */
+
+@media(max-width:768px){
+
+  header{
+    padding:0;
+  }
+
+  .navbar{
+    gap:12px;
+  }
+
+  .logo img{
+    width:145px;
+  }
+
+  nav{
+    display:none;
+  }
+
+  .btn-top{
+    display:flex;
+
+    padding:11px 16px;
+
+    font-size:12px;
+
+    white-space:nowrap;
+  }
+
+}
+
+.logo{
+  display:flex;
+  align-items:center;
 }
 
 .logo img{
   width:190px;
+  height:auto;
+
+  object-fit:contain;
+
+  image-rendering:auto;
+
+  backface-visibility:hidden;
+
+  transform:translateZ(0);
 }
 
 
@@ -683,7 +731,7 @@ footer p{
 
 
 /* =========================================================
-   CHATBOT
+   CHATBOT PREMIUM
 ========================================================= */
 
 .chatbot{
@@ -692,9 +740,11 @@ footer p{
   right:24px;
   bottom:100px;
 
-  width:360px;
+  width:390px;
 
-  max-width:calc(100vw - 40px);
+  height:auto;
+
+  max-height:82vh;
 
   background:#fff;
 
@@ -713,6 +763,9 @@ footer p{
   transform:translateY(20px);
 
   transition:.3s ease;
+
+  display:flex;
+  flex-direction:column;
 }
 
 .chatbot.show{
@@ -721,7 +774,6 @@ footer p{
 
   transform:translateY(0);
 }
-
 
 /* HEADER CHATBOT */
 
@@ -735,18 +787,22 @@ footer p{
 
   color:white;
 
-  padding:20px;
+  padding:22px 22px 18px;
+
+  flex-shrink:0;
 }
 
 
 /* HEADER TOP */
 
-.chat-header-top{
-  display:flex;
-  align-items:center;
-  gap:14px;
-}
+.chat-header-top h3{
+  font-size:18px;
+  font-weight:700;
 
+  margin-bottom:4px;
+
+  line-height:1.2;
+}
 
 /* LOGO CHATBOT */
 
@@ -774,11 +830,12 @@ footer p{
 }
 
 .chat-header-top p{
-  font-size:12px;
+  font-size:13px;
 
-  opacity:.9;
+  opacity:.95;
+
+  line-height:1.4;
 }
-
 
 /* OPCIONES */
 
@@ -993,14 +1050,50 @@ footer p{
   .socials{
     justify-content:center;
   }
+   /* HERO MOBILE */
 
-  .chatbot{
-    width:calc(100vw - 24px);
+.hero-content{
+  text-align:center;
+}
 
-    right:12px;
-    bottom:86px;
-  }
+.hero p{
+  margin-left:auto;
+  margin-right:auto;
+}
 
+.hero-actions{
+  justify-content:center;
+  align-items:center;
+}
+
+.hero-image-full{
+  justify-content:center;
+}
+
+.hero-image-full img{
+  max-width:100%;
+}
+
+  /* MOBILE CHATBOT */
+
+.chatbot{
+  width:calc(100vw - 24px);
+
+  right:12px;
+  bottom:86px;
+
+  max-height:76vh;
+}
+
+.chatbot-toggle{
+  width:58px;
+  height:58px;
+
+  right:14px;
+  bottom:14px;
+
+  font-size:26px;
+}
   .chatbot-toggle{
     width:58px;
     height:58px;
