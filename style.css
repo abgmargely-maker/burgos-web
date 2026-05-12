@@ -415,6 +415,10 @@ section{
   position:relative;
 }
 
+.faq-text{
+  max-width:380px;
+}
+
 
 /* ILUSTRACION */
 
@@ -719,7 +723,21 @@ footer p{
 }
 
 
-/* HEADER */
+/* HEADER CHATBOT */
+
+.chat-header{
+  background:
+  linear-gradient(
+    to right,
+    #c9818d,
+    #bf7884
+  );
+
+  color:white;
+
+  padding:20px;
+}
+
 
 /* HEADER TOP */
 
@@ -733,30 +751,34 @@ footer p{
 /* LOGO CHATBOT */
 
 .chat-header-top img{
-  width:48px;
-  height:48px;
+  width:52px;
+  height:52px;
 
   object-fit:contain;
-
-  border-radius:12px;
 
   background:white;
 
   padding:6px;
+
+  border-radius:14px;
 }
 
 
-/* TEXTO */
+/* TITULOS */
 
 .chat-header-top h3{
   font-size:17px;
+  font-weight:700;
+
   margin-bottom:4px;
 }
 
 .chat-header-top p{
   font-size:12px;
+
   opacity:.9;
 }
+
 
 /* OPCIONES */
 
