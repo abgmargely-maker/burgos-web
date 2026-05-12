@@ -102,6 +102,13 @@ chatOptions.forEach(option => {
     });
 
     option.classList.add('active-option');
+const chatbot = document.getElementById('chatbot');
+const toggleChat = document.getElementById('toggleChat');
+
+toggleChat.addEventListener('click', () => {
+
+  chatbot.classList.toggle('show');
+
 
   });
 
