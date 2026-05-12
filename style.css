@@ -721,33 +721,42 @@ footer p{
 
 /* HEADER */
 
-.chat-header{
-  background:
-  linear-gradient(
-    to right,
-    #c9818d,
-    #bf7884
-  );
+/* HEADER TOP */
 
-  color:white;
-
-  padding:22px;
+.chat-header-top{
+  display:flex;
+  align-items:center;
+  gap:14px;
 }
 
-.chat-header h3{
-  font-size:18px;
 
-  font-weight:700;
+/* LOGO CHATBOT */
 
-  margin-bottom:6px;
+.chat-header-top img{
+  width:48px;
+  height:48px;
+
+  object-fit:contain;
+
+  border-radius:12px;
+
+  background:white;
+
+  padding:6px;
 }
 
-.chat-header p{
-  font-size:13px;
 
-  opacity:.92;
+/* TEXTO */
+
+.chat-header-top h3{
+  font-size:17px;
+  margin-bottom:4px;
 }
 
+.chat-header-top p{
+  font-size:12px;
+  opacity:.9;
+}
 
 /* OPCIONES */
 
