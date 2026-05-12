@@ -46,25 +46,54 @@ faqItems.forEach(item => {
 });
 
 
+
+
 // =====================================================
-// OPCIONES CHATBOT + WHATSAPP DINAMICO
+// CHATBOT PROFESIONAL
 // =====================================================
 
+const chatbot = document.getElementById('chatbot');
+
+const toggleChat = document.getElementById('toggleChat');
+
+const chatResponse = document.getElementById('chatResponse');
+
 const chatOptions = document.querySelectorAll('.chat-option');
+
+
+
+
+// =====================================================
+// ABRIR / CERRAR CHATBOT
+// =====================================================
+
+toggleChat.addEventListener('click', () => {
+
+  chatbot.classList.toggle('show');
+
+});
+
+
+
+
+// =====================================================
+// RESPUESTAS DEL CHATBOT
+// =====================================================
 
 chatOptions.forEach(option => {
 
   option.addEventListener('click', () => {
 
-    // SERVICIO
+    // SERVICIO SELECCIONADO
     const service = option.dataset.service;
 
-    // MENSAJE PERSONALIZADO
+    // MENSAJE AUTOMATICO
     const message =
     `Hola, quiero más información sobre ${service}.`;
 
-    // ENCODE URL
-    const encodedMessage = encodeURIComponent(message);
+    // CONVERTIR URL
+    const encodedMessage =
+    encodeURIComponent(message);
 
     // LINK WHATSAPP
     const waLink =
@@ -81,7 +110,8 @@ chatOptions.forEach(option => {
 
         Hemos identificado tu consulta.
 
-        Un asesor jurídico podrá ayudarte inmediatamente.
+        Uno de nuestros asesores jurídicos
+        podrá ayudarte inmediatamente.
 
         <a
         href="${waLink}"
@@ -96,17 +126,23 @@ chatOptions.forEach(option => {
 
     `;
 
-    // ESTADO ACTIVO
+    // REMOVER ACTIVO
     chatOptions.forEach(btn => {
       btn.classList.remove('active-option');
     });
 
+    // ACTIVAR SELECCIONADO
     option.classList.add('active-option');
 
   });
 
+});
+
+
+
+
 // =====================================================
-// SCROLL SUAVE
+// SCROLL SUAVE MENU
 // =====================================================
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -115,7 +151,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
     e.preventDefault();
 
-    const target = document.querySelector(this.getAttribute('href'));
+    const target =
+    document.querySelector(
+      this.getAttribute('href')
+    );
 
     if(target){
 
@@ -130,22 +169,91 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 
+
+
 // =====================================================
 // SOMBRA HEADER
 // =====================================================
 
 window.addEventListener('scroll', () => {
 
-  const header = document.querySelector('header');
+  const header =
+  document.querySelector('header');
 
   if(window.scrollY > 20){
 
-    header.style.boxShadow = '0 8px 25px rgba(0,0,0,.06)';
+    header.style.boxShadow =
+    '0 8px 25px rgba(0,0,0,.06)';
 
   }else{
 
     header.style.boxShadow = 'none';
 
   }
+
+});
+
+
+
+
+// =====================================================
+// CERRAR CHATBOT AL DAR CLICK FUERA
+// =====================================================
+
+document.addEventListener('click', (e) => {
+
+  const isClickInside =
+  chatbot.contains(e.target) ||
+  toggleChat.contains(e.target);
+
+  if(!isClickInside){
+
+    chatbot.classList.remove('show');
+
+  }
+
+});
+
+
+
+
+// =====================================================
+// ABRIR CHAT AUTOMATICAMENTE
+// =====================================================
+
+setTimeout(() => {
+
+  chatbot.classList.add('show');
+
+}, 4000);
+
+
+
+
+// =====================================================
+// MENSAJE AUTOMATICO INICIAL
+// =====================================================
+
+window.addEventListener('load', () => {
+
+  chatResponse.innerHTML = `
+
+    <div class="bot-message">
+
+      Hola 👋
+
+      <br><br>
+
+      Bienvenido a Burgos Abogados.
+
+      <br><br>
+
+      Selecciona el servicio jurídico
+      que necesitas y uno de nuestros
+      asesores podrá ayudarte.
+
+    </div>
+
+  `;
 
 });
