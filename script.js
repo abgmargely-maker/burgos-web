@@ -47,24 +47,8 @@ faqItems.forEach(item => {
 
 
 // =====================================================
-// CHATBOT PROFESIONAL
+// OPCIONES CHATBOT + WHATSAPP DINAMICO
 // =====================================================
-
-const chatbot = document.getElementById('chatbot');
-const toggleChat = document.getElementById('toggleChat');
-const chatResponse = document.getElementById('chatResponse');
-
-
-// ABRIR / CERRAR
-
-toggleChat.addEventListener('click', () => {
-
-  chatbot.classList.toggle('show');
-
-});
-
-
-// OPCIONES
 
 const chatOptions = document.querySelectorAll('.chat-option');
 
@@ -72,13 +56,21 @@ chatOptions.forEach(option => {
 
   option.addEventListener('click', () => {
 
+    // SERVICIO
     const service = option.dataset.service;
-    const message = option.dataset.message;
 
+    // MENSAJE PERSONALIZADO
+    const message =
+    `Hola, quiero más información sobre ${service}.`;
+
+    // ENCODE URL
     const encodedMessage = encodeURIComponent(message);
 
-    const waLink = `https://wa.me/529996082755?text=${encodedMessage}`;
+    // LINK WHATSAPP
+    const waLink =
+    `https://wa.me/529996082755?text=${encodedMessage}`;
 
+    // RESPUESTA VISUAL
     chatResponse.innerHTML = `
 
       <div class="bot-message">
@@ -104,6 +96,7 @@ chatOptions.forEach(option => {
 
     `;
 
+    // ESTADO ACTIVO
     chatOptions.forEach(btn => {
       btn.classList.remove('active-option');
     });
@@ -113,8 +106,6 @@ chatOptions.forEach(option => {
   });
 
 });
-
-
 // =====================================================
 // SCROLL SUAVE
 // =====================================================
