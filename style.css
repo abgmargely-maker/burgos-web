@@ -1,38 +1,11 @@
+/* =========================================================
+   RESET
+========================================================= */
+
 *{
   margin:0;
   padding:0;
   box-sizing:border-box;
-}
-
-:root{
-  --primary:#bf7884;
-  --primary-dark:#a96470;
-  --text:#2c2c2c;
-  --soft:#f7f3f1;
-  --border:#eadfdb;
-  --shadow:0 10px 35px rgba(0,0,0,.08);
-}
-
-body{
-  font-family:'Montserrat',sans-serif;
-  background:#f9f6f5;
-  color:var(--text);
-  overflow-x:hidden;
-}
-
-a{
-  text-decoration:none;
-  color:inherit;
-
-
-
-  /* =========================================================
-   RESPONSIVE GLOBAL
-========================================================= */
-
-img{
-  max-width:100%;
-  display:block;
 }
 
 html{
@@ -40,340 +13,47 @@ html{
 }
 
 body{
+  font-family:'Montserrat',sans-serif;
+  background:#f9f6f5;
+  color:#2c2c2c;
   overflow-x:hidden;
 }
 
+img{
+  max-width:100%;
+  display:block;
+}
 
-/* =========================================================
-   DESKTOP GRANDE
-========================================================= */
-
-@media(min-width:1600px){
-
-  .container{
-    max-width:1400px;
-  }
-
-  .hero h2{
-    font-size:68px;
-  }
-
-  .hero p{
-    font-size:20px;
-  }
-
+a{
+  text-decoration:none;
+  color:inherit;
 }
 
 
 /* =========================================================
-   LAPTOPS
+   VARIABLES
 ========================================================= */
 
-@media(max-width:1280px){
+:root{
 
-  .hero-grid{
-    gap:50px;
-  }
+  --primary:#bf7884;
+  --primary-dark:#a96470;
 
-  .hero h2{
-    font-size:52px;
-  }
+  --text:#2c2c2c;
 
-  .hero-image-full{
-    height:700px;
-  }
+  --soft:#f7f3f1;
+
+  --border:#eadfdb;
+
+  --shadow:
+  0 10px 35px rgba(0,0,0,.08);
 
 }
 
 
 /* =========================================================
-   TABLETS
+   CONTAINER
 ========================================================= */
-
-@media(max-width:1100px){
-
-  .container{
-    width:92%;
-  }
-
-  nav{
-    display:none;
-  }
-
-  .hero{
-    padding-top:30px;
-  }
-
-  .hero-grid,
-  .practice-header,
-  .faq-grid,
-  .contact-grid,
-  .footer-grid{
-    grid-template-columns:1fr;
-  }
-
-  .hero-content{
-    padding-bottom:10px;
-  }
-
-  .hero h2{
-    font-size:46px;
-    max-width:700px;
-  }
-
-  .hero p{
-    max-width:100%;
-  }
-
-  .hero-image-full{
-    height:auto;
-  }
-
-  .hero-image-full img{
-    width:100%;
-    border-radius:28px;
-  }
-
-  .cards{
-    grid-template-columns:1fr 1fr;
-  }
-
-  .faq-left{
-    text-align:center;
-  }
-
-  .faq-right{
-    padding-top:0;
-  }
-
-  .contact-grid{
-    gap:60px;
-  }
-
-}
-
-
-/* =========================================================
-   MOBILE GENERAL
-========================================================= */
-
-@media(max-width:768px){
-
-  section{
-    padding:70px 0;
-  }
-
-  .navbar{
-    padding:16px 0;
-  }
-
-  .logo img{
-    width:150px;
-  }
-
-  .btn-top{
-    display:none;
-  }
-
-  .hero{
-    padding-top:20px;
-  }
-
-  .hero-grid{
-    gap:35px;
-  }
-
-  .hero h2{
-    font-size:38px;
-    line-height:1.12;
-  }
-
-  .hero p{
-    font-size:16px;
-    line-height:1.8;
-  }
-
-  .hero-actions{
-    flex-direction:column;
-    align-items:flex-start;
-    width:100%;
-  }
-
-  .btn-primary,
-  .btn-secondary{
-    width:100%;
-    justify-content:center;
-  }
-
-  .hero-image-full img{
-    border-radius:24px;
-  }
-
-  .section-title{
-    font-size:32px;
-    line-height:1.2;
-  }
-
-  .section-text{
-    font-size:15px;
-  }
-
-  .cards{
-    grid-template-columns:1fr;
-    gap:22px;
-  }
-
-  .card{
-    min-height:auto;
-    padding:34px 22px;
-  }
-
-  .card h3{
-    font-size:22px;
-  }
-
-  .card p{
-    font-size:14px;
-  }
-
-  .faq-grid{
-    gap:30px;
-  }
-
-  .faq-illustration{
-    height:300px;
-  }
-
-  .faq-circle{
-    width:220px;
-    height:220px;
-  }
-
-  .faq-illustration img{
-    width:230px;
-  }
-
-  .faq-dot{
-    width:40px;
-    height:40px;
-    right:30px;
-    bottom:70px;
-  }
-
-  .faq-question{
-    font-size:15px;
-    padding:20px;
-  }
-
-  .faq-answer{
-    font-size:14px;
-    padding:0 20px 20px;
-  }
-
-  .contact-info h2{
-    font-size:32px;
-  }
-
-  .contact-item{
-    font-size:15px;
-  }
-
-  .map{
-    height:280px;
-  }
-
-  .footer-grid{
-    gap:40px;
-  }
-
-  .footer-logo img{
-    width:160px;
-  }
-
-  .socials{
-    gap:14px;
-  }
-
-  .socials a{
-    width:44px;
-    height:44px;
-  }
-
-}
-
-
-/* =========================================================
-   MOBILE PEQUEÑO
-========================================================= */
-
-@media(max-width:480px){
-
-  .container{
-    width:90%;
-  }
-
-  .hero h2{
-    font-size:32px;
-  }
-
-  .hero p{
-    font-size:15px;
-  }
-
-  .btn-primary,
-  .btn-secondary{
-    padding:15px 20px;
-    font-size:14px;
-  }
-
-  .section-title{
-    font-size:28px;
-  }
-
-  .card{
-    padding:30px 20px;
-  }
-
-  .card h3{
-    font-size:20px;
-  }
-
-  .faq-question{
-    font-size:14px;
-  }
-
-  .faq-answer{
-    font-size:13px;
-  }
-
-  .contact-info h2{
-    font-size:28px;
-  }
-
-}
-
-
-/* =========================================================
-   ULTRA PEQUEÑOS
-========================================================= */
-
-@media(max-width:360px){
-
-  .hero h2{
-    font-size:28px;
-  }
-
-  .section-title{
-    font-size:24px;
-  }
-
-  .btn-primary,
-  .btn-secondary{
-    font-size:13px;
-  }
-
-}
-}
 
 .container{
   width:90%;
@@ -382,14 +62,19 @@ body{
 }
 
 
-/* HEADER */
+/* =========================================================
+   HEADER
+========================================================= */
 
 header{
   position:sticky;
   top:0;
-  z-index:100;
+  z-index:1000;
+
   background:rgba(255,255,255,.96);
-  backdrop-filter:blur(8px);
+
+  backdrop-filter:blur(10px);
+
   border-bottom:1px solid #eee;
 }
 
@@ -397,22 +82,24 @@ header{
   display:flex;
   align-items:center;
   justify-content:space-between;
+
   padding:20px 0;
 }
 
 .logo img{
-  width:200px;
-  height:auto;
-  display:block;
+  width:190px;
 }
 
 
-/* MENU */
+/* =========================================================
+   MENU
+========================================================= */
 
 nav{
   display:flex;
   align-items:center;
   gap:38px;
+
   font-size:14px;
 }
 
@@ -423,72 +110,106 @@ nav a{
 
 nav a.active::after{
   content:'';
+
   position:absolute;
+
   left:0;
   bottom:-14px;
+
   width:100%;
   height:3px;
+
   background:var(--primary);
+
   border-radius:10px;
 }
 
 
-/* BOTONES */
+/* =========================================================
+   BOTONES
+========================================================= */
 
-.btn-top{
-  background:linear-gradient(to right,#c9818d,#bf7884);
+.btn-top,
+.btn-primary{
+  background:
+  linear-gradient(
+    to right,
+    #c9818d,
+    #bf7884
+  );
+
   color:white;
-  padding:14px 24px;
+
+  padding:15px 26px;
+
   border-radius:999px;
+
   display:flex;
   align-items:center;
+  justify-content:center;
+
   gap:10px;
-  font-weight:600;
+
   font-size:14px;
-  box-shadow:0 8px 18px rgba(191,120,132,.22);
+  font-weight:600;
+
+  box-shadow:
+  0 10px 24px rgba(191,120,132,.22);
+
+  transition:.25s;
 }
 
-.btn-primary{
-  background:linear-gradient(to right,#c9818d,#bf7884);
-  color:white;
-  padding:16px 28px;
-  border-radius:999px;
-  font-weight:600;
-  font-size:15px;
-  display:flex;
-  align-items:center;
-  gap:10px;
-  box-shadow:0 10px 24px rgba(191,120,132,.25);
+.btn-top:hover,
+.btn-primary:hover{
+  transform:translateY(-2px);
 }
 
 .btn-secondary{
-  padding:16px 28px;
+  padding:15px 26px;
+
   border:1px solid #cda2aa;
+
   border-radius:999px;
+
   color:#b16d79;
-  font-weight:600;
-  font-size:15px;
+
   background:white;
+
+  font-size:14px;
+  font-weight:600;
+
+  transition:.25s;
+}
+
+.btn-secondary:hover{
+  background:#fff5f6;
 }
 
 
-/* HERO */
-
-/* HERO */
+/* =========================================================
+   HERO
+========================================================= */
 
 .hero{
   padding:40px 0 60px;
-  background:linear-gradient(to right,#fbf8f7,#f2ece9);
+
+  background:
+  linear-gradient(
+    to right,
+    #fbf8f7,
+    #f2ece9
+  );
+
   overflow:hidden;
 }
 
-
-/* GRID */
-
 .hero-grid{
   display:grid;
+
   grid-template-columns:1fr 1fr;
+
   align-items:center;
+
   gap:60px;
 }
 
@@ -502,17 +223,25 @@ nav a.active::after{
 
 .hero h2{
   font-size:58px;
+
   line-height:1.08;
+
   color:#bf7884;
+
   margin-bottom:24px;
+
   font-weight:800;
 }
 
 .hero p{
   font-size:18px;
+
   line-height:1.8;
+
   color:#4d4d4d;
+
   margin-bottom:34px;
+
   max-width:580px;
 }
 
@@ -527,6 +256,7 @@ nav a.active::after{
 
 .hero-image-full{
   width:100%;
+
   display:flex;
   justify-content:center;
   align-items:center;
@@ -534,141 +264,23 @@ nav a.active::after{
 
 .hero-image-full img{
   width:100%;
+
   max-width:620px;
+
   height:auto;
+
   object-fit:contain;
+
   border-radius:34px;
-  box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+  box-shadow:
+  0 18px 45px rgba(0,0,0,.08);
 }
 
 
-/* RESPONSIVE */
-
-@media(max-width:1100px){
-
-  .hero-grid{
-    grid-template-columns:1fr;
-    gap:40px;
-  }
-
-  .hero-content{
-    order:1;
-  }
-
-  .hero-image-full{
-    order:2;
-  }
-
-  .hero-image-full img{
-    max-width:100%;
-  }
-
-}
-
-
-@media(max-width:768px){
-
-  .hero{
-    padding:20px 0 50px;
-  }
-
-  .hero h2{
-    font-size:38px;
-    line-height:1.12;
-  }
-
-  .hero p{
-    font-size:16px;
-  }
-
-  .hero-actions{
-    flex-direction:column;
-    align-items:flex-start;
-    width:100%;
-  }
-
-  .btn-primary,
-  .btn-secondary{
-    width:100%;
-    justify-content:center;
-  }
-
-  .hero-image-full img{
-    border-radius:24px;
-  }
-
-}
-
-
-@media(max-width:480px){
-
-  .hero h2{
-    font-size:32px;
-  }
-
-  .hero p{
-    font-size:15px;
-  }
-
-}
-
-/* RESPONSIVE */
-
-@media(max-width:1100px){
-
-  .hero-grid{
-    grid-template-columns:1fr;
-  }
-
-  .hero-content{
-    order:1;
-    padding-bottom:10px;
-  }
-
-  .hero-image-full{
-    order:2;
-    height:auto;
-  }
-
-  .hero-image-full img{
-    border-radius:28px;
-  }
-
-}
-
-
-@media(max-width:768px){
-
-  .hero{
-    padding-top:20px;
-  }
-
-  .hero-grid{
-    gap:35px;
-  }
-
-  .hero h2{
-    font-size:38px;
-    line-height:1.12;
-  }
-
-  .hero p{
-    font-size:16px;
-  }
-
-  .hero-actions{
-    flex-direction:column;
-    align-items:flex-start;
-    width:100%;
-  }
-
-  .btn-primary,
-  .btn-secondary{
-    width:100%;
-    justify-content:center;
-  }
-
-}/* SECTIONS */
+/* =========================================================
+   SECTIONS
+========================================================= */
 
 section{
   padding:90px 0;
@@ -676,113 +288,131 @@ section{
 
 .section-title{
   font-size:42px;
+
   color:var(--primary);
+
   margin-bottom:14px;
+
   font-weight:800;
 }
 
 .section-mini{
   color:#8d9274;
+
   font-weight:600;
+
   margin-bottom:14px;
+
   font-size:14px;
+
   letter-spacing:.5px;
 }
 
 .section-text{
   font-size:16px;
+
   line-height:1.8;
+
   color:#555;
 }
 
+
+/* =========================================================
+   SERVICIOS
+========================================================= */
+
 .practice-header{
   display:flex;
+
   justify-content:space-between;
+
   gap:40px;
+
   align-items:flex-end;
+
   margin-bottom:50px;
 }
 
-
-/* CARDS */
-
 .cards{
   display:grid;
+
   grid-template-columns:repeat(4,1fr);
+
   gap:30px;
 }
 
 .card{
   background:white;
+
   border:1px solid #efe4df;
+
   border-radius:18px;
+
   padding:40px 24px;
+
   text-align:center;
+
   min-height:280px;
+
   transition:.3s;
 }
 
 .card:hover{
   transform:translateY(-8px);
+
   box-shadow:var(--shadow);
 }
 
 .card i{
   font-size:40px;
+
   color:var(--primary);
+
   margin-bottom:24px;
 }
 
 .card h3{
   font-size:24px;
+
   margin-bottom:14px;
 }
 
 .card p{
   color:#555;
+
   line-height:1.8;
+
   font-size:15px;
 }
 
-.line{
-  width:60px;
-  height:4px;
-  border-radius:20px;
-  background:var(--primary);
-  margin:24px auto 0;
-}
 
-
-/* FAQ */
-
-/* FAQ */
+/* =========================================================
+   FAQ
+========================================================= */
 
 #faq{
   background:#fcf9f8;
+
   position:relative;
+
   overflow:hidden;
 }
 
 .faq-grid{
   display:grid;
+
   grid-template-columns:420px 1fr;
+
   gap:60px;
+
   align-items:center;
 }
 
 
-/* COLUMNA IZQUIERDA */
+/* IZQUIERDA */
 
 .faq-left{
   position:relative;
-  width:100%;
-}
-
-
-/* COLUMNA DERECHA */
-
-.faq-right{
-  width:100%;
 }
 
 
@@ -790,10 +420,15 @@ section{
 
 .faq-illustration{
   position:relative;
+
   width:100%;
+
   height:380px;
+
   margin-top:30px;
+
   display:flex;
+
   align-items:center;
   justify-content:center;
 }
@@ -801,31 +436,44 @@ section{
 .faq-circle{
   width:280px;
   height:280px;
+
   border-radius:50%;
+
   background:#f1dfdc;
+
   position:absolute;
+
   left:50%;
   top:50%;
+
   transform:translate(-50%,-50%);
 }
 
 .faq-illustration img{
   position:relative;
+
   z-index:2;
+
   width:100%;
+
   max-width:300px;
-  height:auto;
+
   object-fit:contain;
 }
 
 .faq-dot{
   width:50px;
   height:50px;
+
   border-radius:50%;
+
   background:#8d9274;
+
   position:absolute;
+
   right:30px;
   bottom:80px;
+
   z-index:3;
 }
 
@@ -834,37 +482,49 @@ section{
 
 .faq-item{
   background:white;
+
   border:1px solid #ece0dc;
+
   border-radius:14px;
+
   margin-bottom:18px;
+
   overflow:hidden;
-  box-shadow:0 5px 18px rgba(0,0,0,.03);
-  width:100%;
+
+  box-shadow:
+  0 5px 18px rgba(0,0,0,.03);
 }
 
 .faq-question{
   padding:22px 24px;
+
   display:flex;
+
   justify-content:space-between;
   align-items:center;
+
   cursor:pointer;
+
   font-size:16px;
+
   font-weight:600;
+
   color:#444;
-  gap:18px;
 }
 
 .faq-question i{
-  color:#666;
   font-size:14px;
-  flex-shrink:0;
 }
 
 .faq-answer{
   padding:0 24px 24px;
+
   font-size:14px;
+
   line-height:1.9;
+
   color:#666;
+
   display:none;
 }
 
@@ -873,108 +533,45 @@ section{
 }
 
 
-/* RESPONSIVE */
-
-@media(max-width:1100px){
-
-  .faq-grid{
-    grid-template-columns:1fr;
-    gap:40px;
-  }
-
-  .faq-left{
-    text-align:center;
-  }
-
-  .faq-illustration{
-    height:320px;
-  }
-
-}
-
-
-@media(max-width:768px){
-
-  .faq-grid{
-    gap:30px;
-  }
-
-  .faq-illustration{
-    height:260px;
-  }
-
-  .faq-circle{
-    width:210px;
-    height:210px;
-  }
-
-  .faq-illustration img{
-    max-width:220px;
-  }
-
-  .faq-dot{
-    width:36px;
-    height:36px;
-    right:40px;
-    bottom:55px;
-  }
-
-  .faq-question{
-    font-size:15px;
-    padding:20px;
-  }
-
-  .faq-answer{
-    font-size:13px;
-    padding:0 20px 20px;
-  }
-
-}
-
-
-@media(max-width:480px){
-
-  .faq-illustration{
-    height:220px;
-  }
-
-  .faq-circle{
-    width:180px;
-    height:180px;
-  }
-
-  .faq-illustration img{
-    max-width:180px;
-  }
-
-}
-
-/* CONTACTO */
+/* =========================================================
+   CONTACTO
+========================================================= */
 
 .contact-grid{
   display:grid;
+
   grid-template-columns:400px 1fr;
+
   gap:40px;
+
   align-items:center;
 }
 
 .contact-info h2{
   font-size:44px;
+
   color:var(--primary);
+
   margin-bottom:30px;
 }
 
 .contact-info h4{
   color:#8d9274;
+
   margin-bottom:14px;
+
   font-size:14px;
 }
 
 .contact-item{
   display:flex;
+
   align-items:center;
+
   gap:16px;
+
   margin-bottom:24px;
+
   font-size:17px;
 }
 
@@ -984,7 +581,9 @@ section{
 
 .map{
   height:360px;
+
   border-radius:20px;
+
   overflow:hidden;
 }
 
@@ -995,42 +594,56 @@ section{
 }
 
 
-/* FOOTER */
+/* =========================================================
+   FOOTER
+========================================================= */
 
 footer{
   background:#111;
+
   color:white;
+
   padding:60px 0 30px;
 }
 
 .footer-grid{
   display:grid;
+
   grid-template-columns:1.2fr 1fr 1fr;
+
   gap:60px;
+
   margin-bottom:50px;
 }
 
 .footer-logo img{
-  width:200px;
+  width:180px;
+
   margin-bottom:20px;
 }
 
 .footer-links h4,
 .footer-social h4{
   margin-bottom:22px;
+
   font-size:22px;
 }
 
 .footer-links a{
   display:block;
+
   margin-bottom:14px;
+
   color:#ddd;
+
   font-size:15px;
 }
 
 footer p{
   font-size:15px;
+
   line-height:1.8;
+
   color:#ddd;
 }
 
@@ -1042,473 +655,75 @@ footer p{
 .socials a{
   width:50px;
   height:50px;
+
   border-radius:50%;
+
   background:#c67d89;
+
   display:flex;
   align-items:center;
   justify-content:center;
-  color:white;
 }
 
 .copyright{
   text-align:center;
+
   border-top:1px solid rgba(255,255,255,.12);
+
   padding-top:24px;
+
   color:#ccc;
+
   font-size:14px;
 }
 
 
-/* RESPONSIVE */
-
-@media(max-width:1100px){
-
-  .hero-grid,
-  .practice-header,
-  .faq-grid,
-  .contact-grid,
-  .footer-grid{
-    grid-template-columns:1fr;
-  }
-
-  .cards{
-    grid-template-columns:1fr 1fr;
-  }
-
-  nav{
-    display:none;
-  }
-
-  .hero-image-full{
-    height:auto;
-  }
-
-  .hero-image-full img{
-    border-radius:30px;
-  }
-
-  .faq-left{
-    text-align:center;
-  }
-
-  .faq-right{
-    padding-top:0;
-  }
-
-}
-
-
-@media(max-width:768px){
-
-  .cards{
-    grid-template-columns:1fr;
-  }
-
-  .hero h2{
-    font-size:40px;
-  }
-
-  .section-title{
-    font-size:34px;
-  }
-
-  .contact-info h2{
-    font-size:34px;
-  }
-
-  .hero p{
-    font-size:16px;
-  }
-
-  .hero-actions{
-    flex-direction:column;
-    align-items:flex-start;
-  }
-
-  .faq-question{
-    font-size:16px;
-  }
-
-  .faq-answer{
-    font-size:14px;
-  }
-
-  .faq-circle{
-    width:250px;
-    height:250px;
-  }
-
-  .faq-illustration img{
-    width:260px;
-  }
-
-}
 /* =========================================================
-   MOBILE HARMONY SYSTEM
+   CHATBOT
 ========================================================= */
-
-@media(max-width:768px){
-
-  html,
-  body{
-    overflow-x:hidden;
-  }
-
-  .container{
-    width:90%;
-  }
-
-
-  /* ESPACIADOS */
-
-  section{
-    padding:60px 0;
-  }
-
-
-  /* HEADER */
-
-  header{
-    position:relative;
-  }
-
-  .navbar{
-    padding:16px 0;
-  }
-
-  .logo img{
-    width:145px;
-  }
-
-  nav{
-    display:none;
-  }
-
-  .btn-top{
-    display:none;
-  }
-
-
-  /* HERO */
-
-  .hero{
-    padding:20px 0 40px;
-  }
-
-  .hero-grid{
-    grid-template-columns:1fr;
-    gap:30px;
-  }
-
-  .hero-content{
-    text-align:left;
-  }
-
-  .hero h2{
-    font-size:36px;
-    line-height:1.12;
-    margin-bottom:18px;
-  }
-
-  .hero p{
-    font-size:15px;
-    line-height:1.8;
-    margin-bottom:26px;
-  }
-
-  .hero-actions{
-    flex-direction:column;
-    gap:14px;
-    width:100%;
-  }
-
-  .btn-primary,
-  .btn-secondary{
-    width:100%;
-    justify-content:center;
-    text-align:center;
-    padding:15px 20px;
-    font-size:14px;
-  }
-
-  .hero-image-full{
-    width:100%;
-  }
-
-  .hero-image-full img{
-    width:100%;
-    border-radius:22px;
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
-  }
-
-
-  /* TITULOS */
-
-  .section-title{
-    font-size:30px;
-    line-height:1.2;
-    margin-bottom:12px;
-  }
-
-  .section-mini{
-    font-size:12px;
-    letter-spacing:1px;
-  }
-
-  .section-text{
-    font-size:14px;
-    line-height:1.8;
-  }
-
-  .practice-header{
-    gap:20px;
-    margin-bottom:34px;
-  }
-
-
-  /* CARDS */
-
-  .cards{
-    grid-template-columns:1fr;
-    gap:18px;
-  }
-
-  .card{
-    padding:30px 22px;
-    border-radius:18px;
-    min-height:auto;
-  }
-
-  .card i{
-    font-size:34px;
-    margin-bottom:18px;
-  }
-
-  .card h3{
-    font-size:20px;
-    margin-bottom:12px;
-  }
-
-  .card p{
-    font-size:14px;
-    line-height:1.8;
-  }
-
-
-  /* FAQ */
-
-  .faq-grid{
-    grid-template-columns:1fr;
-    gap:28px;
-  }
-
-  .faq-left{
-    text-align:center;
-  }
-
-  .faq-illustration{
-    height:240px;
-    margin-top:10px;
-  }
-
-  .faq-circle{
-    width:200px;
-    height:200px;
-  }
-
-  .faq-illustration img{
-    width:190px;
-  }
-
-  .faq-dot{
-    width:34px;
-    height:34px;
-    right:40px;
-    bottom:48px;
-  }
-
-  .faq-item{
-    border-radius:14px;
-  }
-
-  .faq-question{
-    padding:18px;
-    font-size:14px;
-    line-height:1.5;
-  }
-
-  .faq-answer{
-    padding:0 18px 18px;
-    font-size:13px;
-    line-height:1.8;
-  }
-
-
-  /* CONTACTO */
-
-  .contact-grid{
-    grid-template-columns:1fr;
-    gap:36px;
-  }
-
-  .contact-info h2{
-    font-size:30px;
-    margin-bottom:24px;
-  }
-
-  .contact-item{
-    font-size:14px;
-    margin-bottom:18px;
-  }
-
-  .map{
-    height:240px;
-    border-radius:18px;
-  }
-
-
-  /* FOOTER */
-
-  footer{
-    padding:50px 0 24px;
-  }
-
-  .footer-grid{
-    grid-template-columns:1fr;
-    gap:34px;
-    text-align:center;
-  }
-
-  .footer-logo{
-    display:flex;
-    justify-content:center;
-  }
-
-  .footer-logo img{
-    width:150px;
-  }
-
-  footer p{
-    font-size:14px;
-    line-height:1.8;
-  }
-
-  .footer-links h4,
-  .footer-social h4{
-    font-size:18px;
-    margin-bottom:16px;
-  }
-
-  .footer-links a{
-    font-size:14px;
-    margin-bottom:12px;
-  }
-
-  .socials{
-    justify-content:center;
-  }
-
-  .socials a{
-    width:42px;
-    height:42px;
-  }
-
-  .copyright{
-    font-size:12px;
-    line-height:1.6;
-    margin-top:10px;
-  }
-
-}
-
-
-/* =========================================================
-   EXTRA SMALL DEVICES
-========================================================= */
-
-@media(max-width:480px){
-
-  .hero h2{
-    font-size:31px;
-  }
-
-  .section-title{
-    font-size:26px;
-  }
-
-  .hero p,
-  .section-text,
-  .card p{
-    font-size:13px;
-  }
-
-  .btn-primary,
-  .btn-secondary{
-    font-size:13px;
-  }
-
-  .faq-question{
-    font-size:13px;
-  }
-
-  .faq-answer{
-    font-size:12px;
-  }
-
-  .contact-info h2{
-    font-size:26px;
-  }
-
-/* =========================================================
-   CHATBOT DESKTOP + MOBILE
-========================================================= */
-
-/* CONTENEDOR */
 
 .chatbot{
   position:fixed;
+
   right:24px;
   bottom:100px;
 
   width:360px;
-  max-width:calc(100% - 24px);
 
-  background:#ffffff;
+  max-width:calc(100vw - 40px);
+
+  background:#fff;
 
   border-radius:24px;
 
   box-shadow:
-  0 20px 60px rgba(0,0,0,.18);
-
-  overflow:hidden;
+  0 25px 60px rgba(0,0,0,.18);
 
   z-index:999999;
+
+  overflow:hidden;
 
   opacity:0;
   visibility:hidden;
 
-  transform:translateY(20px) scale(.96);
+  transform:translateY(20px);
 
-  transition:
-  opacity .3s ease,
-  transform .3s ease,
-  visibility .3s;
+  transition:.3s ease;
 }
-
-
-/* MOSTRAR */
 
 .chatbot.show{
   opacity:1;
   visibility:visible;
-  transform:translateY(0) scale(1);
+
+  transform:translateY(0);
 }
 
 
 /* HEADER */
 
 .chat-header{
-  background:linear-gradient(
+  background:
+  linear-gradient(
     to right,
     #c9818d,
     #bf7884
@@ -1521,12 +736,15 @@ footer p{
 
 .chat-header h3{
   font-size:18px;
+
   font-weight:700;
+
   margin-bottom:6px;
 }
 
 .chat-header p{
   font-size:13px;
+
   opacity:.92;
 }
 
@@ -1546,9 +764,6 @@ footer p{
   overflow-y:auto;
 }
 
-
-/* BOTONES OPCIONES */
-
 .chat-option{
   background:#f7f3f1;
 
@@ -1560,6 +775,7 @@ footer p{
 
   display:flex;
   align-items:center;
+
   gap:12px;
 
   transition:.25s;
@@ -1571,16 +787,19 @@ footer p{
 
 .chat-option:hover{
   background:#f1e5e7;
+
   transform:translateY(-1px);
 }
 
 .chat-option i{
   color:#bf7884;
+
   font-size:16px;
 }
 
 .active-option{
   border:1px solid #bf7884;
+
   background:#f9ecef;
 }
 
@@ -1626,12 +845,6 @@ footer p{
   border-radius:12px;
 
   font-weight:600;
-
-  transition:.25s;
-}
-
-.chat-wa-btn:hover{
-  transform:translateY(-2px);
 }
 
 
@@ -1643,8 +856,8 @@ footer p{
   right:24px;
   bottom:24px;
 
-  width:66px;
-  height:66px;
+  width:68px;
+  height:68px;
 
   border:none;
 
@@ -1654,36 +867,107 @@ footer p{
 
   color:white;
 
-  font-size:30px;
-
-  cursor:pointer;
-
-  z-index:1000000;
-
   display:flex;
   align-items:center;
   justify-content:center;
 
+  font-size:32px;
+
+  cursor:pointer;
+
+  z-index:999999999;
+
   box-shadow:
-  0 14px 35px rgba(37,211,102,.35);
-
-  transition:.25s;
-}
-
-.chatbot-toggle:hover{
-  transform:scale(1.08);
+  0 18px 40px rgba(37,211,102,.38);
 }
 
 
-/* MOBILE */
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:1100px){
+
+  nav{
+    display:none;
+  }
+
+  .hero-grid,
+  .practice-header,
+  .faq-grid,
+  .contact-grid,
+  .footer-grid{
+    grid-template-columns:1fr;
+  }
+
+  .cards{
+    grid-template-columns:1fr 1fr;
+  }
+
+}
+
 
 @media(max-width:768px){
 
+  section{
+    padding:60px 0;
+  }
+
+  .btn-top{
+    display:none;
+  }
+
+  .hero-grid{
+    grid-template-columns:1fr;
+    gap:30px;
+  }
+
+  .hero h2{
+    font-size:36px;
+  }
+
+  .hero p{
+    font-size:15px;
+  }
+
+  .hero-actions{
+    flex-direction:column;
+
+    width:100%;
+  }
+
+  .btn-primary,
+  .btn-secondary{
+    width:100%;
+  }
+
+  .cards{
+    grid-template-columns:1fr;
+  }
+
+  .faq-grid{
+    grid-template-columns:1fr;
+  }
+
+  .contact-grid{
+    grid-template-columns:1fr;
+  }
+
+  .footer-grid{
+    grid-template-columns:1fr;
+
+    text-align:center;
+  }
+
+  .socials{
+    justify-content:center;
+  }
+
   .chatbot{
-    width:calc(100% - 24px);
+    width:calc(100vw - 24px);
 
     right:12px;
-    bottom:88px;
+    bottom:86px;
   }
 
   .chatbot-toggle{
@@ -1698,145 +982,15 @@ footer p{
 
 }
 
-/* BOTON FLOTANTE */
 
-.chatbot-toggle{
-  position:fixed;
-  right:24px;
-  bottom:24px;
-  width:64px;
-  height:64px;
-  border:none;
-  border-radius:50%;
-  background:#25D366;
-  color:white;
-  font-size:30px;
-  cursor:pointer;
-  z-index:10000;
+@media(max-width:480px){
 
-  display:flex;
-  align-items:center;
-  justify-content:center;
-
-  box-shadow:0 10px 30px rgba(37,211,102,.35);
-
-  transition:.25s;
-}
-
-.chatbot-toggle:hover{
-  transform:scale(1.06);
-}
-
-
-/* RESPONSIVE */
-
-@media(max-width:768px){
-
-  /* =========================================================
-   FIX DEFINITIVO CHATBOT
-========================================================= */
-
-.chatbot{
-  position:fixed !important;
-
-  right:24px !important;
-  bottom:100px !important;
-
-  width:360px !important;
-  max-width:calc(100vw - 40px) !important;
-
-  background:#fff !important;
-
-  border-radius:24px !important;
-
-  box-shadow:
-  0 25px 60px rgba(0,0,0,.18) !important;
-
-  z-index:999999999 !important;
-
-  overflow:hidden !important;
-
-  opacity:0;
-  visibility:hidden;
-
-  transform:translateY(20px);
-
-  transition:.3s ease;
-}
-
-
-/* MOSTRAR */
-
-.chatbot.show{
-  opacity:1 !important;
-  visibility:visible !important;
-  transform:translateY(0) !important;
-}
-
-
-/* BOTON */
-
-.chatbot-toggle{
-  position:fixed !important;
-
-  right:24px !important;
-  bottom:24px !important;
-
-  width:68px !important;
-  height:68px !important;
-
-  border:none !important;
-
-  border-radius:50% !important;
-
-  background:#25D366 !important;
-
-  color:#fff !important;
-
-  display:flex !important;
-  align-items:center !important;
-  justify-content:center !important;
-
-  font-size:32px !important;
-
-  cursor:pointer !important;
-
-  z-index:9999999999 !important;
-
-  box-shadow:
-  0 18px 40px rgba(37,211,102,.38) !important;
-}
-
-
-/* HOVER */
-
-.chatbot-toggle:hover{
-  transform:scale(1.06);
-}
-
-
-/* MOBILE */
-
-@media(max-width:768px){
-
-  .chatbot{
-    right:12px !important;
-    bottom:86px !important;
-
-    width:calc(100vw - 24px) !important;
+  .hero h2{
+    font-size:30px;
   }
 
-  .chatbot-toggle{
-    width:58px !important;
-    height:58px !important;
-
-    right:14px !important;
-    bottom:14px !important;
-
-    font-size:26px !important;
+  .section-title{
+    font-size:28px;
   }
 
-}
-
-}
 }
