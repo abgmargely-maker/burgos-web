@@ -23,6 +23,356 @@ body{
 a{
   text-decoration:none;
   color:inherit;
+
+
+
+  /* =========================================================
+   RESPONSIVE GLOBAL
+========================================================= */
+
+img{
+  max-width:100%;
+  display:block;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  overflow-x:hidden;
+}
+
+
+/* =========================================================
+   DESKTOP GRANDE
+========================================================= */
+
+@media(min-width:1600px){
+
+  .container{
+    max-width:1400px;
+  }
+
+  .hero h2{
+    font-size:68px;
+  }
+
+  .hero p{
+    font-size:20px;
+  }
+
+}
+
+
+/* =========================================================
+   LAPTOPS
+========================================================= */
+
+@media(max-width:1280px){
+
+  .hero-grid{
+    gap:50px;
+  }
+
+  .hero h2{
+    font-size:52px;
+  }
+
+  .hero-image-full{
+    height:700px;
+  }
+
+}
+
+
+/* =========================================================
+   TABLETS
+========================================================= */
+
+@media(max-width:1100px){
+
+  .container{
+    width:92%;
+  }
+
+  nav{
+    display:none;
+  }
+
+  .hero{
+    padding-top:30px;
+  }
+
+  .hero-grid,
+  .practice-header,
+  .faq-grid,
+  .contact-grid,
+  .footer-grid{
+    grid-template-columns:1fr;
+  }
+
+  .hero-content{
+    padding-bottom:10px;
+  }
+
+  .hero h2{
+    font-size:46px;
+    max-width:700px;
+  }
+
+  .hero p{
+    max-width:100%;
+  }
+
+  .hero-image-full{
+    height:auto;
+  }
+
+  .hero-image-full img{
+    width:100%;
+    border-radius:28px;
+  }
+
+  .cards{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .faq-left{
+    text-align:center;
+  }
+
+  .faq-right{
+    padding-top:0;
+  }
+
+  .contact-grid{
+    gap:60px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE GENERAL
+========================================================= */
+
+@media(max-width:768px){
+
+  section{
+    padding:70px 0;
+  }
+
+  .navbar{
+    padding:16px 0;
+  }
+
+  .logo img{
+    width:150px;
+  }
+
+  .btn-top{
+    display:none;
+  }
+
+  .hero{
+    padding-top:20px;
+  }
+
+  .hero-grid{
+    gap:35px;
+  }
+
+  .hero h2{
+    font-size:38px;
+    line-height:1.12;
+  }
+
+  .hero p{
+    font-size:16px;
+    line-height:1.8;
+  }
+
+  .hero-actions{
+    flex-direction:column;
+    align-items:flex-start;
+    width:100%;
+  }
+
+  .btn-primary,
+  .btn-secondary{
+    width:100%;
+    justify-content:center;
+  }
+
+  .hero-image-full img{
+    border-radius:24px;
+  }
+
+  .section-title{
+    font-size:32px;
+    line-height:1.2;
+  }
+
+  .section-text{
+    font-size:15px;
+  }
+
+  .cards{
+    grid-template-columns:1fr;
+    gap:22px;
+  }
+
+  .card{
+    min-height:auto;
+    padding:34px 22px;
+  }
+
+  .card h3{
+    font-size:22px;
+  }
+
+  .card p{
+    font-size:14px;
+  }
+
+  .faq-grid{
+    gap:30px;
+  }
+
+  .faq-illustration{
+    height:300px;
+  }
+
+  .faq-circle{
+    width:220px;
+    height:220px;
+  }
+
+  .faq-illustration img{
+    width:230px;
+  }
+
+  .faq-dot{
+    width:40px;
+    height:40px;
+    right:30px;
+    bottom:70px;
+  }
+
+  .faq-question{
+    font-size:15px;
+    padding:20px;
+  }
+
+  .faq-answer{
+    font-size:14px;
+    padding:0 20px 20px;
+  }
+
+  .contact-info h2{
+    font-size:32px;
+  }
+
+  .contact-item{
+    font-size:15px;
+  }
+
+  .map{
+    height:280px;
+  }
+
+  .footer-grid{
+    gap:40px;
+  }
+
+  .footer-logo img{
+    width:160px;
+  }
+
+  .socials{
+    gap:14px;
+  }
+
+  .socials a{
+    width:44px;
+    height:44px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE PEQUEÑO
+========================================================= */
+
+@media(max-width:480px){
+
+  .container{
+    width:90%;
+  }
+
+  .hero h2{
+    font-size:32px;
+  }
+
+  .hero p{
+    font-size:15px;
+  }
+
+  .btn-primary,
+  .btn-secondary{
+    padding:15px 20px;
+    font-size:14px;
+  }
+
+  .section-title{
+    font-size:28px;
+  }
+
+  .card{
+    padding:30px 20px;
+  }
+
+  .card h3{
+    font-size:20px;
+  }
+
+  .faq-question{
+    font-size:14px;
+  }
+
+  .faq-answer{
+    font-size:13px;
+  }
+
+  .contact-info h2{
+    font-size:28px;
+  }
+
+}
+
+
+/* =========================================================
+   ULTRA PEQUEÑOS
+========================================================= */
+
+@media(max-width:360px){
+
+  .hero h2{
+    font-size:28px;
+  }
+
+  .section-title{
+    font-size:24px;
+  }
+
+  .btn-primary,
+  .btn-secondary{
+    font-size:13px;
+  }
+
+}
 }
 
 .container{
