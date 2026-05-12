@@ -97,8 +97,14 @@ header{
   }
 
   .navbar{
-    gap:12px;
-  }
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+
+  gap:20px;
+
+  padding:20px 0;
+}
 
   .logo img{
     width:145px;
@@ -118,6 +124,11 @@ header{
     white-space:nowrap;
   }
 
+}
+
+.logo{
+  display:flex;
+  align-items:center;
 }
 
 .logo{
