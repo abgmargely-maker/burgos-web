@@ -62,8 +62,8 @@ header{
 nav{
   display:flex;
   align-items:center;
-  gap:45px;
-  font-size:16px;
+  gap:38px;
+  font-size:14px;
 }
 
 nav a{
@@ -86,36 +86,16 @@ nav a.active::after{
 /* BOTONES */
 
 .btn-top{
-  background:linear-gradient(to right,#c9818d,#bf7884);
-  color:white;
-  padding:16px 28px;
-  border-radius:999px;
-  display:flex;
-  align-items:center;
-  gap:12px;
-  font-weight:600;
-  box-shadow:0 8px 18px rgba(191,120,132,.22);
+  padding:14px 24px;
+  font-size:14px;
 }
-
 .btn-primary{
-  background:linear-gradient(to right,#c9818d,#bf7884);
-  color:white;
-  padding:20px 34px;
-  border-radius:999px;
-  font-weight:600;
-  display:flex;
-  align-items:center;
-  gap:12px;
-  box-shadow:0 10px 24px rgba(191,120,132,.25);
+  padding:16px 28px;
+  font-size:15px;
 }
-
 .btn-secondary{
-  padding:20px 34px;
-  border:1px solid #cda2aa;
-  border-radius:999px;
-  color:#b16d79;
-  font-weight:600;
-  background:white;
+  padding:16px 28px;
+  font-size:15px;
 }
 
 
@@ -141,19 +121,19 @@ nav a.active::after{
 }
 
 .hero h2{
-  font-size:72px;
-  line-height:1.05;
+  font-size:58px;
+  line-height:1.08;
   color:#bf7884;
-  margin-bottom:30px;
+  margin-bottom:24px;
   font-weight:800;
 }
 
 .hero p{
-  font-size:22px;
+  font-size:18px;
   line-height:1.8;
   color:#4d4d4d;
-  margin-bottom:40px;
-  max-width:650px;
+  margin-bottom:34px;
+  max-width:580px;
 }
 
 .hero-actions{
@@ -188,21 +168,24 @@ section{
   padding:90px 0;
 }
 
+
 .section-mini{
   color:#8d9274;
   font-weight:600;
-  margin-bottom:18px;
+  margin-bottom:14px;
+  font-size:14px;
+  letter-spacing:.5px;
 }
 
 .section-title{
-  font-size:54px;
+  font-size:42px;
   color:var(--primary);
-  margin-bottom:18px;
+  margin-bottom:14px;
   font-weight:800;
 }
 
 .section-text{
-  font-size:20px;
+  font-size:16px;
   line-height:1.8;
   color:#555;
 }
@@ -225,13 +208,8 @@ section{
 }
 
 .card{
-  background:white;
-  border:1px solid #efe4df;
-  border-radius:18px;
-  padding:50px 30px;
-  text-align:center;
-  min-height:320px;
-  transition:.3s;
+  padding:40px 24px;
+  min-height:280px;
 }
 
 .card:hover{
@@ -240,20 +218,19 @@ section{
 }
 
 .card i{
-  font-size:48px;
-  color:var(--primary);
-  margin-bottom:30px;
+  font-size:40px;
+  margin-bottom:24px;
 }
 
 .card h3{
-  font-size:31px;
-  margin-bottom:18px;
+  font-size:24px;
+  margin-bottom:14px;
 }
 
+
 .card p{
-  color:#555;
+  font-size:15px;
   line-height:1.8;
-  font-size:18px;
 }
 
 .line{
@@ -343,27 +320,18 @@ section{
 }
 
 .faq-question{
-  padding:30px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  cursor:pointer;
-  font-size:21px;
-  font-weight:600;
-  color:#444;
+  padding:24px;
+  font-size:17px;
 }
-
 .faq-question i{
   color:#666;
   font-size:16px;
 }
 
 .faq-answer{
-  padding:0 30px 30px;
-  font-size:17px;
+  padding:0 24px 24px;
+  font-size:15px;
   line-height:1.9;
-  color:#666;
-  display:none;
 }
 
 .faq-item.active .faq-answer{
@@ -420,24 +388,15 @@ section{
 }
 
 .contact-info h4{
-  color:#8d9274;
-  margin-bottom:16px;
+  font-size:14px;
 }
 
 .contact-info h2{
-  font-size:58px;
-  color:var(--primary);
-  margin-bottom:38px;
+  font-size:44px;
 }
-
 .contact-item{
-  display:flex;
-  align-items:center;
-  gap:18px;
-  margin-bottom:28px;
-  font-size:21px;
+  font-size:17px;
 }
-
 .contact-item i{
   color:var(--primary);
 }
@@ -476,14 +435,18 @@ footer{
 }
 
 .footer-links a{
-  display:block;
-  margin-bottom:14px;
-  color:#ddd;
+  font-size:15px;
 }
 
-.footer-social h4,
-.footer-links h4{
-  margin-bottom:24px;
+.footer-links h4,
+.footer-social h4{
+  margin-bottom:22px;
+  font-size:22px;
+}
+
+footer p{
+  font-size:15px;
+  line-height:1.8;
 }
 
 .socials{
@@ -503,12 +466,8 @@ footer{
 }
 
 .copyright{
-  text-align:center;
-  border-top:1px solid rgba(255,255,255,.12);
-  padding-top:24px;
-  color:#ccc;
+  font-size:14px;
 }
-
 
 /* RESPONSIVE */
 
@@ -547,11 +506,17 @@ footer{
     grid-template-columns:1fr;
   }
 
-  .hero h2,
-  .section-title,
-  .contact-info h2{
-    font-size:42px;
-  }
+  .hero h2{
+  font-size:40px;
+}
+
+.section-title{
+  font-size:34px;
+}
+
+.contact-info h2{
+  font-size:34px;
+}
 
   .hero p{
     font-size:18px;
