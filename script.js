@@ -1,99 +1,3 @@
-// FAQ
-
-const faqItems = document.querySelectorAll('.faq-item');
-
-faqItems.forEach(item => {
-
-  item.querySelector('.faq-question').addEventListener('click', () => {
-
-    faqItems.forEach(faq => {
-
-      if(faq !== item){
-        faq.classList.remove('active');
-
-        faq.querySelector('i').className =
-        'fa-solid fa-chevron-down';
-      }
-
-    });
-
-    item.classList.toggle('active');
-
-    const icon = item.querySelector('.faq-question i');
-
-    icon.className = item.classList.contains('active')
-      ? 'fa-solid fa-chevron-up'
-      : 'fa-solid fa-chevron-down';
-
-  });
-
-});
-
-
-// CHATBOT
-
-const chatOptions = document.querySelectorAll('.chat-option');
-
-const responseBox =
-document.getElementById('chatResponse');
-
-chatOptions.forEach(option => {
-
-  option.addEventListener('click', () => {
-
-    const response = option.dataset.response;
-
-    responseBox.style.display = 'block';
-
-    responseBox.innerHTML = `
-      <strong style="
-      display:block;
-      margin-bottom:12px;
-      color:#bf7884;
-      ">
-      Burgos Abogados
-      </strong>
-
-      ${response}
-
-      <br><br>
-
-      <a
-      href="https://wa.me/529996082755"
-      target="_blank"
-      style="
-      display:inline-block;
-      background:#25d366;
-      color:white;
-      padding:14px 22px;
-      border-radius:999px;
-      font-weight:600;
-      ">
-      Continuar por WhatsApp
-      </a>
-    `;
-
-  });
-
-});
-
-
-// BOTÓN FLOTANTE CHAT
-
-const toggleBtn =
-document.getElementById('toggleChat');
-
-const chatbot =
-document.getElementById('chatbot');
-
-toggleBtn.addEventListener('click', () => {
-
-  chatbot.style.display =
-  chatbot.style.display === 'none'
-    ? 'block'
-    : 'none';
-
-});
 // =====================================================
 // FAQ ACORDEON
 // =====================================================
@@ -109,11 +13,14 @@ faqItems.forEach(item => {
     faqItems.forEach(faq => {
 
       if(faq !== item){
+
         faq.classList.remove('active');
 
         const icon = faq.querySelector('i');
+
         icon.classList.remove('fa-chevron-up');
         icon.classList.add('fa-chevron-down');
+
       }
 
     });
@@ -139,10 +46,8 @@ faqItems.forEach(item => {
 });
 
 
-
-
 // =====================================================
-// CHATBOT FUNCIONAL
+// CHATBOT PROFESIONAL
 // =====================================================
 
 const chatbot = document.getElementById('chatbot');
@@ -150,7 +55,7 @@ const toggleChat = document.getElementById('toggleChat');
 const chatResponse = document.getElementById('chatResponse');
 
 
-// ABRIR / CERRAR CHAT
+// ABRIR / CERRAR
 
 toggleChat.addEventListener('click', () => {
 
@@ -159,9 +64,7 @@ toggleChat.addEventListener('click', () => {
 });
 
 
-
-
-// OPCIONES DEL CHAT
+// OPCIONES
 
 const chatOptions = document.querySelectorAll('.chat-option');
 
@@ -169,17 +72,27 @@ chatOptions.forEach(option => {
 
   option.addEventListener('click', () => {
 
-    const response = option.getAttribute('data-response');
+    const service = option.dataset.service;
+    const message = option.dataset.message;
 
-    // RESPUESTA VISUAL
+    const encodedMessage = encodeURIComponent(message);
+
+    const waLink = `https://wa.me/529996082755?text=${encodedMessage}`;
+
     chatResponse.innerHTML = `
-    
+
       <div class="bot-message">
 
-        ${response}
+        <strong>${service}</strong>
 
-        <a 
-        href="https://wa.me/529996082755?text=Hola,%20quiero%20más%20información"
+        <br><br>
+
+        Hemos identificado tu consulta.
+
+        Un asesor jurídico podrá ayudarte inmediatamente.
+
+        <a
+        href="${waLink}"
         target="_blank"
         class="chat-wa-btn">
 
@@ -191,7 +104,6 @@ chatOptions.forEach(option => {
 
     `;
 
-    // EFECTO ACTIVO
     chatOptions.forEach(btn => {
       btn.classList.remove('active-option');
     });
@@ -203,10 +115,8 @@ chatOptions.forEach(option => {
 });
 
 
-
-
 // =====================================================
-// SCROLL SUAVE MENU
+// SCROLL SUAVE
 // =====================================================
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -230,10 +140,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 
-
-
 // =====================================================
-// HEADER SHADOW AL SCROLL
+// SOMBRA HEADER
 // =====================================================
 
 window.addEventListener('scroll', () => {
