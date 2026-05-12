@@ -640,7 +640,7 @@
     </h3>
 
     <p>
-      ¿Cómo podemos ayudarte?
+      Selecciona el servicio que necesitas
     </p>
 
   </div>
@@ -650,9 +650,10 @@
   <div class="chat-options">
 
 
+    <!-- DIVORCIOS -->
     <div
     class="chat-option"
-    data-response="Te ayudamos con divorcios voluntarios, incausados, custodia y convenios familiares.">
+    data-service="Divorcios">
 
       <i class="fa-solid fa-users"></i>
 
@@ -662,23 +663,38 @@
 
 
 
+    <!-- PENSION -->
     <div
     class="chat-option"
-    data-response="Brindamos asesoría y representación en pensiones alimenticias y convenios judiciales.">
+    data-service="Pensión alimenticia">
 
       <i class="fa-solid fa-hand-holding-dollar"></i>
 
-      Pensiones alimenticias
+      Pensión alimenticia
 
     </div>
 
 
 
+    <!-- CUSTODIA -->
     <div
     class="chat-option"
-    data-response="Atendemos procedimientos familiares como custodia, convivencias y patria potestad.">
+    data-service="Custodia y convivencia">
 
       <i class="fa-solid fa-people-roof"></i>
+
+      Custodia y convivencia
+
+    </div>
+
+
+
+    <!-- FAMILIAR -->
+    <div
+    class="chat-option"
+    data-service="Procedimientos familiares">
+
+      <i class="fa-solid fa-children"></i>
 
       Procedimientos familiares
 
@@ -686,21 +702,36 @@
 
 
 
+    <!-- CIVIL -->
     <div
     class="chat-option"
-    data-response="Litigios civiles y mercantiles, contratos, adeudos y recuperación de cartera.">
+    data-service="Derecho civil">
 
       <i class="fa-solid fa-scale-balanced"></i>
 
-      Procedimientos civiles y mercantiles
+      Derecho civil
 
     </div>
 
 
 
+    <!-- MERCANTIL -->
     <div
     class="chat-option"
-    data-response="Realizamos donaciones y regularización patrimonial.">
+    data-service="Derecho mercantil">
+
+      <i class="fa-solid fa-briefcase"></i>
+
+      Derecho mercantil
+
+    </div>
+
+
+
+    <!-- DONACIONES -->
+    <div
+    class="chat-option"
+    data-service="Donaciones">
 
       <i class="fa-solid fa-gift"></i>
 
@@ -710,9 +741,10 @@
 
 
 
+    <!-- COMPRAVENTAS -->
     <div
     class="chat-option"
-    data-response="Te apoyamos en compraventas inmobiliarias y contratos.">
+    data-service="Compraventas">
 
       <i class="fa-solid fa-house"></i>
 
@@ -722,9 +754,10 @@
 
 
 
+    <!-- NOTARIAL -->
     <div
     class="chat-option"
-    data-response="Servicios notariales, poderes y protocolización de actos.">
+    data-service="Servicios notariales">
 
       <i class="fa-solid fa-stamp"></i>
 
@@ -747,124 +780,13 @@
 
 <!-- BOTON FLOTANTE -->
 
-<!-- CHATBOT -->
-
-<div class="chatbot" id="chatbot">
-
-  <div class="chat-header">
-
-    <h3>
-      Burgos Abogados
-    </h3>
-
-    <p>
-      Selecciona el servicio que necesitas
-    </p>
-
-  </div>
-
-
-  <div class="chat-options">
-
-
-    <div
-    class="chat-option"
-    data-service="Divorcios"
-    data-message="Hola, necesito asesoría sobre divorcio.">
-
-      <i class="fa-solid fa-users"></i>
-
-      Divorcios
-
-    </div>
-
-
-    <div
-    class="chat-option"
-    data-service="Pensión Alimenticia"
-    data-message="Hola, necesito asesoría sobre pensión alimenticia.">
-
-      <i class="fa-solid fa-hand-holding-dollar"></i>
-
-      Pensión alimenticia
-
-    </div>
-
-
-    <div
-    class="chat-option"
-    data-service="Custodia y convivencia"
-    data-message="Hola, necesito asesoría sobre custodia y convivencia.">
-
-      <i class="fa-solid fa-people-roof"></i>
-
-      Custodia y convivencia
-
-    </div>
-
-
-    <div
-    class="chat-option"
-    data-service="Derecho Civil"
-    data-message="Hola, necesito asesoría en derecho civil.">
-
-      <i class="fa-solid fa-scale-balanced"></i>
-
-      Derecho civil
-
-    </div>
-
-
-    <div
-    class="chat-option"
-    data-service="Derecho Mercantil"
-    data-message="Hola, necesito asesoría en derecho mercantil.">
-
-      <i class="fa-solid fa-briefcase"></i>
-
-      Derecho mercantil
-
-    </div>
-
-
-    <div
-    class="chat-option"
-    data-service="Servicios Notariales"
-    data-message="Hola, necesito información sobre servicios notariales.">
-
-      <i class="fa-solid fa-stamp"></i>
-
-      Servicios notariales
-
-    </div>
-
-
-    <div
-    class="chat-option"
-    data-service="Compraventas"
-    data-message="Hola, necesito asesoría sobre compraventa inmobiliaria.">
-
-      <i class="fa-solid fa-house"></i>
-
-      Compraventas
-
-    </div>
-
-  </div>
-
-
-  <div class="chat-response" id="chatResponse"></div>
-
-</div>
-
-
-<!-- BOTON FLOTANTE -->
-
 <button
 class="chatbot-toggle"
 id="toggleChat">
 
   <i class="fab fa-whatsapp"></i>
+
+</button>
 
 
 </button>
