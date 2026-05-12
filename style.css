@@ -51,7 +51,7 @@ header{
 }
 
 .logo img{
-  width:220px;
+  width:200px;
   height:auto;
   display:block;
 }
@@ -86,16 +86,39 @@ nav a.active::after{
 /* BOTONES */
 
 .btn-top{
+  background:linear-gradient(to right,#c9818d,#bf7884);
+  color:white;
   padding:14px 24px;
+  border-radius:999px;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-weight:600;
   font-size:14px;
+  box-shadow:0 8px 18px rgba(191,120,132,.22);
 }
+
 .btn-primary{
+  background:linear-gradient(to right,#c9818d,#bf7884);
+  color:white;
   padding:16px 28px;
+  border-radius:999px;
+  font-weight:600;
   font-size:15px;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  box-shadow:0 10px 24px rgba(191,120,132,.25);
 }
+
 .btn-secondary{
   padding:16px 28px;
+  border:1px solid #cda2aa;
+  border-radius:999px;
+  color:#b16d79;
+  font-weight:600;
   font-size:15px;
+  background:white;
 }
 
 
@@ -168,6 +191,12 @@ section{
   padding:90px 0;
 }
 
+.section-title{
+  font-size:42px;
+  color:var(--primary);
+  margin-bottom:14px;
+  font-weight:800;
+}
 
 .section-mini{
   color:#8d9274;
@@ -175,13 +204,6 @@ section{
   margin-bottom:14px;
   font-size:14px;
   letter-spacing:.5px;
-}
-
-.section-title{
-  font-size:42px;
-  color:var(--primary);
-  margin-bottom:14px;
-  font-weight:800;
 }
 
 .section-text{
@@ -208,8 +230,13 @@ section{
 }
 
 .card{
+  background:white;
+  border:1px solid #efe4df;
+  border-radius:18px;
   padding:40px 24px;
+  text-align:center;
   min-height:280px;
+  transition:.3s;
 }
 
 .card:hover{
@@ -219,6 +246,7 @@ section{
 
 .card i{
   font-size:40px;
+  color:var(--primary);
   margin-bottom:24px;
 }
 
@@ -227,10 +255,10 @@ section{
   margin-bottom:14px;
 }
 
-
 .card p{
-  font-size:15px;
+  color:#555;
   line-height:1.8;
+  font-size:15px;
 }
 
 .line{
@@ -241,8 +269,6 @@ section{
   margin:24px auto 0;
 }
 
-
-/* FAQ */
 
 /* FAQ */
 
@@ -321,8 +347,15 @@ section{
 
 .faq-question{
   padding:24px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  cursor:pointer;
   font-size:17px;
+  font-weight:600;
+  color:#444;
 }
+
 .faq-question i{
   color:#666;
   font-size:16px;
@@ -332,51 +365,14 @@ section{
   padding:0 24px 24px;
   font-size:15px;
   line-height:1.9;
+  color:#666;
+  display:none;
 }
 
 .faq-item.active .faq-answer{
   display:block;
 }
 
-
-/* RESPONSIVE */
-
-@media(max-width:1100px){
-
-  .faq-grid{
-    grid-template-columns:1fr;
-  }
-
-  .faq-left{
-    text-align:center;
-  }
-
-  .faq-right{
-    padding-top:0;
-  }
-
-}
-
-@media(max-width:768px){
-
-  .faq-question{
-    font-size:18px;
-  }
-
-  .faq-answer{
-    font-size:16px;
-  }
-
-  .faq-circle{
-    width:250px;
-    height:250px;
-  }
-
-  .faq-illustration img{
-    width:260px;
-  }
-
-}
 
 /* CONTACTO */
 
@@ -387,16 +383,26 @@ section{
   align-items:center;
 }
 
+.contact-info h2{
+  font-size:44px;
+  color:var(--primary);
+  margin-bottom:30px;
+}
+
 .contact-info h4{
+  color:#8d9274;
+  margin-bottom:14px;
   font-size:14px;
 }
 
-.contact-info h2{
-  font-size:44px;
-}
 .contact-item{
+  display:flex;
+  align-items:center;
+  gap:16px;
+  margin-bottom:24px;
   font-size:17px;
 }
+
 .contact-item i{
   color:var(--primary);
 }
@@ -430,12 +436,8 @@ footer{
 }
 
 .footer-logo img{
-  width:220px;
+  width:200px;
   margin-bottom:20px;
-}
-
-.footer-links a{
-  font-size:15px;
 }
 
 .footer-links h4,
@@ -444,9 +446,17 @@ footer{
   font-size:22px;
 }
 
+.footer-links a{
+  display:block;
+  margin-bottom:14px;
+  color:#ddd;
+  font-size:15px;
+}
+
 footer p{
   font-size:15px;
   line-height:1.8;
+  color:#ddd;
 }
 
 .socials{
@@ -455,8 +465,8 @@ footer p{
 }
 
 .socials a{
-  width:54px;
-  height:54px;
+  width:50px;
+  height:50px;
   border-radius:50%;
   background:#c67d89;
   display:flex;
@@ -466,8 +476,13 @@ footer p{
 }
 
 .copyright{
+  text-align:center;
+  border-top:1px solid rgba(255,255,255,.12);
+  padding-top:24px;
+  color:#ccc;
   font-size:14px;
 }
+
 
 /* RESPONSIVE */
 
@@ -497,6 +512,14 @@ footer p{
     border-radius:30px;
   }
 
+  .faq-left{
+    text-align:center;
+  }
+
+  .faq-right{
+    padding-top:0;
+  }
+
 }
 
 
@@ -507,24 +530,41 @@ footer p{
   }
 
   .hero h2{
-  font-size:40px;
-}
+    font-size:40px;
+  }
 
-.section-title{
-  font-size:34px;
-}
+  .section-title{
+    font-size:34px;
+  }
 
-.contact-info h2{
-  font-size:34px;
-}
+  .contact-info h2{
+    font-size:34px;
+  }
 
   .hero p{
-    font-size:18px;
+    font-size:16px;
   }
 
   .hero-actions{
     flex-direction:column;
     align-items:flex-start;
+  }
+
+  .faq-question{
+    font-size:16px;
+  }
+
+  .faq-answer{
+    font-size:14px;
+  }
+
+  .faq-circle{
+    width:250px;
+    height:250px;
+  }
+
+  .faq-illustration img{
+    width:260px;
   }
 
 }
