@@ -1,45 +1,24 @@
-// =====================================================
-// FAQ ACORDEON
-// =====================================================
+// ======================================================
+// FAQ
+// ======================================================
 
-const faqItems = document.querySelectorAll('.faq-item');
+const faqItems = document.querySelectorAll(".faq-item");
 
 faqItems.forEach(item => {
 
-  const question = item.querySelector('.faq-question');
+  const question = item.querySelector(".faq-question");
 
-  question.addEventListener('click', () => {
+  question.addEventListener("click", () => {
 
     faqItems.forEach(faq => {
 
       if(faq !== item){
-
-        faq.classList.remove('active');
-
-        const icon = faq.querySelector('i');
-
-        icon.classList.remove('fa-chevron-up');
-        icon.classList.add('fa-chevron-down');
-
+        faq.classList.remove("active");
       }
 
     });
 
-    item.classList.toggle('active');
-
-    const icon = item.querySelector('i');
-
-    if(item.classList.contains('active')){
-
-      icon.classList.remove('fa-chevron-down');
-      icon.classList.add('fa-chevron-up');
-
-    }else{
-
-      icon.classList.remove('fa-chevron-up');
-      icon.classList.add('fa-chevron-down');
-
-    }
+    item.classList.toggle("active");
 
   });
 
@@ -47,92 +26,230 @@ faqItems.forEach(item => {
 
 
 
+// ======================================================
+// CHATBOT
+// ======================================================
 
-// =====================================================
-// CHATBOT PROFESIONAL
-// =====================================================
+const chatbot = document.getElementById("chatbot");
 
-const chatbot = document.getElementById('chatbot');
+const toggleChat = document.getElementById("toggleChat");
 
-const toggleChat = document.getElementById('toggleChat');
+const options = document.querySelectorAll(".chat-option");
 
-const chatResponse = document.getElementById('chatResponse');
-
-const chatOptions = document.querySelectorAll('.chat-option');
-
+const responseBox = document.getElementById("chatResponse");
 
 
 
-// =====================================================
-// ABRIR / CERRAR CHATBOT
-// =====================================================
+// ABRIR / CERRAR
 
-toggleChat.addEventListener('click', () => {
+toggleChat.addEventListener("click", () => {
 
-  chatbot.classList.toggle('show');
+  chatbot.classList.toggle("show");
 
 });
 
 
 
+// RESPUESTAS AUTOMATICAS
 
-// =====================================================
-// RESPUESTAS DEL CHATBOT
-// =====================================================
+const responses = {
 
-chatOptions.forEach(option => {
+  "Divorcios": `
+    <div class="bot-message">
 
-  option.addEventListener('click', () => {
+      <strong>Divorcios</strong><br><br>
 
-    // SERVICIO SELECCIONADO
-    const service = option.dataset.service;
+      Podemos ayudarte en:
+      <br><br>
 
-    // MENSAJE AUTOMATICO
-    const message =
-    `Hola, quiero más información sobre ${service}.`;
+      • Divorcio incausado<br>
+      • Divorcio voluntario<br>
+      • Convenios<br>
+      • Custodia<br>
+      • Pensión alimenticia
 
-    // CONVERTIR URL
-    const encodedMessage =
-    encodeURIComponent(message);
+      <a
+      href="https://wa.me/529996082755?text=Hola,%20quiero%20más%20información%20sobre%20Divorcios"
+      target="_blank"
+      class="chat-wa-btn">
 
-    // LINK WHATSAPP
-    const waLink =
-    `https://wa.me/529996082755?text=${encodedMessage}`;
+        <i class="fab fa-whatsapp"></i>
 
-    // RESPUESTA VISUAL
-    chatResponse.innerHTML = `
+        Continuar por WhatsApp
 
-      <div class="bot-message">
+      </a>
 
-        <strong>${service}</strong>
+    </div>
+  `,
 
-        <br><br>
 
-        Hemos identificado tu consulta.
 
-        Uno de nuestros asesores jurídicos
-        podrá ayudarte inmediatamente.
+  "Pensión alimenticia": `
+    <div class="bot-message">
 
-        <a
-        href="${waLink}"
-        target="_blank"
-        class="chat-wa-btn">
+      <strong>Pensión alimenticia</strong><br><br>
 
-          Continuar por WhatsApp
+      Te asesoramos en:
+      <br><br>
 
-        </a>
+      • Demanda de pensión<br>
+      • Incumplimiento<br>
+      • Aumento o reducción<br>
+      • Ejecución judicial
 
-      </div>
+      <a
+      href="https://wa.me/529996082755?text=Hola,%20quiero%20más%20información%20sobre%20Pensión%20alimenticia"
+      target="_blank"
+      class="chat-wa-btn">
 
-    `;
+        <i class="fab fa-whatsapp"></i>
 
-    // REMOVER ACTIVO
-    chatOptions.forEach(btn => {
-      btn.classList.remove('active-option');
+        Continuar por WhatsApp
+
+      </a>
+
+    </div>
+  `,
+
+
+
+  "Custodia y convivencia": `
+    <div class="bot-message">
+
+      <strong>Custodia y convivencia</strong><br><br>
+
+      Atendemos asuntos relacionados con:
+      <br><br>
+
+      • Guarda y custodia<br>
+      • Régimen de convivencia<br>
+      • Patria potestad<br>
+      • Protección de menores
+
+      <a
+      href="https://wa.me/529996082755?text=Hola,%20quiero%20más%20información%20sobre%20Custodia%20y%20convivencia"
+      target="_blank"
+      class="chat-wa-btn">
+
+        <i class="fab fa-whatsapp"></i>
+
+        Continuar por WhatsApp
+
+      </a>
+
+    </div>
+  `,
+
+
+
+  "Derecho civil": `
+    <div class="bot-message">
+
+      <strong>Derecho civil</strong><br><br>
+
+      Podemos ayudarte con:
+      <br><br>
+
+      • Contratos<br>
+      • Daños y perjuicios<br>
+      • Incumplimientos<br>
+      • Recuperación de adeudos
+
+      <a
+      href="https://wa.me/529996082755?text=Hola,%20quiero%20más%20información%20sobre%20Derecho%20civil"
+      target="_blank"
+      class="chat-wa-btn">
+
+        <i class="fab fa-whatsapp"></i>
+
+        Continuar por WhatsApp
+
+      </a>
+
+    </div>
+  `,
+
+
+
+  "Derecho mercantil": `
+    <div class="bot-message">
+
+      <strong>Derecho mercantil</strong><br><br>
+
+      Servicios disponibles:
+      <br><br>
+
+      • Cobranza judicial<br>
+      • Pagarés<br>
+      • Contratos mercantiles<br>
+      • Conflictos empresariales
+
+      <a
+      href="https://wa.me/529996082755?text=Hola,%20quiero%20más%20información%20sobre%20Derecho%20mercantil"
+      target="_blank"
+      class="chat-wa-btn">
+
+        <i class="fab fa-whatsapp"></i>
+
+        Continuar por WhatsApp
+
+      </a>
+
+    </div>
+  `,
+
+
+
+  "Compraventas": `
+    <div class="bot-message">
+
+      <strong>Compraventas</strong><br><br>
+
+      Brindamos asesoría en:
+      <br><br>
+
+      • Operaciones inmobiliarias<br>
+      • Revisión de contratos<br>
+      • Seguridad patrimonial<br>
+      • Formalización legal
+
+      <a
+      href="https://wa.me/529996082755?text=Hola,%20quiero%20más%20información%20sobre%20Compraventas"
+      target="_blank"
+      class="chat-wa-btn">
+
+        <i class="fab fa-whatsapp"></i>
+
+        Continuar por WhatsApp
+
+      </a>
+
+    </div>
+  `
+
+};
+
+
+
+// EVENTOS OPCIONES
+
+options.forEach(option => {
+
+  option.addEventListener("click", () => {
+
+    // REMOVER ACTIVAS
+    options.forEach(btn => {
+      btn.classList.remove("active-option");
     });
 
-    // ACTIVAR SELECCIONADO
-    option.classList.add('active-option');
+    // ACTIVAR
+    option.classList.add("active-option");
+
+    // SERVICIO
+    const service = option.dataset.service;
+
+    // RESPUESTA
+    responseBox.innerHTML = responses[service];
 
   });
 
@@ -140,120 +257,32 @@ chatOptions.forEach(option => {
 
 
 
-
-// =====================================================
-// SCROLL SUAVE MENU
-// =====================================================
-
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-
-  anchor.addEventListener('click', function (e) {
-
-    e.preventDefault();
-
-    const target =
-    document.querySelector(
-      this.getAttribute('href')
-    );
-
-    if(target){
-
-      target.scrollIntoView({
-        behavior:'smooth'
-      });
-
-    }
-
-  });
-
-});
-
-
-
-
-// =====================================================
-// SOMBRA HEADER
-// =====================================================
-
-window.addEventListener('scroll', () => {
-
-  const header =
-  document.querySelector('header');
-
-  if(window.scrollY > 20){
-
-    header.style.boxShadow =
-    '0 8px 25px rgba(0,0,0,.06)';
-
-  }else{
-
-    header.style.boxShadow = 'none';
-
-  }
-
-});
-
-
-
-
-// =====================================================
-// CERRAR CHATBOT AL DAR CLICK FUERA
-// =====================================================
-
-document.addEventListener('click', (e) => {
-
-  const isClickInside =
-  chatbot.contains(e.target) ||
-  toggleChat.contains(e.target);
-
-  if(!isClickInside){
-
-    chatbot.classList.remove('show');
-
-  }
-
-});
-
-
-
-
-// =====================================================
-// ABRIR CHAT AUTOMATICAMENTE
-// =====================================================
+// ======================================================
+// AUTO OPEN CHATBOT
+// ======================================================
 
 setTimeout(() => {
 
-  chatbot.classList.add('show');
+  chatbot.classList.add("show");
 
-}, 4000);
-
-
+}, 3500);
 
 
-// =====================================================
-// MENSAJE AUTOMATICO INICIAL
-// =====================================================
 
-window.addEventListener('load', () => {
+// ======================================================
+// CERRAR AL HACER CLICK FUERA
+// ======================================================
 
-  chatResponse.innerHTML = `
+document.addEventListener("click", (e) => {
 
-    <div class="bot-message">
+  if(
+    !chatbot.contains(e.target)
+    &&
+    !toggleChat.contains(e.target)
+  ){
 
-      Hola 👋
+    chatbot.classList.remove("show");
 
-      <br><br>
-
-      Bienvenido a Burgos Abogados.
-
-      <br><br>
-
-      Selecciona el servicio jurídico
-      que necesitas y uno de nuestros
-      asesores podrá ayudarte.
-
-    </div>
-
-  `;
+  }
 
 });
