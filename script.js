@@ -156,7 +156,6 @@ const responses = {
       • Reconocimiento de Concubinato<br>
       • Reconocimiento de Interventor<br>
       
-
       <a
       href="https://wa.me/529996082755?text=Hola,%20quiero%20más%20información%20sobre%20Procedimientos%20familiares"
       target="_blank"
