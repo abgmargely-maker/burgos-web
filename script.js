@@ -142,7 +142,7 @@ const responses = {
 
 
   
-  "Procedimientos Familiares": `
+  "Procedimientos familiares": `
     <div class="bot-message">
 
       <strong>Procedimientos familiares</strong><br><br>
