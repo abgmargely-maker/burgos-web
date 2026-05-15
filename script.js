@@ -145,7 +145,7 @@ const responses = {
   "Procedimientos Familiares": `
     <div class="bot-message">
 
-      <strong>Custodia y convivencia</strong><br><br>
+      <strong>Procedimientos familiares</strong><br><br>
 
       Atendemos asuntos relacionados con:
       <br><br>
