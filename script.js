@@ -151,6 +151,9 @@ const responses = {
       <br><br>
 
       • Contratos<br>
+      • Prescripción
+      • Proforma
+      • Hipotecas
       • Daños y perjuicios<br>
       • Incumplimientos<br>
       • Recuperación de adeudos
@@ -180,6 +183,8 @@ const responses = {
       <br><br>
 
       • Cobranza judicial<br>
+      • Cobranza extrajudicial
+      • Juicio ejecutivo mercantil
       • Pagarés<br>
       • Contratos mercantiles<br>
       • Conflictos empresariales
@@ -200,14 +205,17 @@ const responses = {
 
 
 
-  "Compraventas": `
+  "Servicios notariales": `
     <div class="bot-message">
 
-      <strong>Compraventas</strong><br><br>
+      <strong>Servicios notariales</strong><br><br>
 
       Brindamos asesoría en:
       <br><br>
 
+      • Donaciones
+      • Compraventas
+      • Testamentos
       • Operaciones inmobiliarias<br>
       • Revisión de contratos<br>
       • Seguridad patrimonial<br>
