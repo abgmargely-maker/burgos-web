@@ -142,6 +142,35 @@ const responses = {
 
 
   
+  "Custodia y convivencia": `
+    <div class="bot-message">
+
+      <strong>Custodia y convivencia</strong><br><br>
+
+      Atendemos asuntos relacionados con:
+      <br><br>
+
+      • Guarda y custodia<br>
+      • Régimen de convivencia<br>
+      • Patria potestad<br>
+      • Protección de menores
+
+      <a
+      href="https://wa.me/529996082755?text=Hola,%20quiero%20más%20información%20sobre%20Custodia%20y%20convivencia"
+      target="_blank"
+      class="chat-wa-btn">
+
+        <i class="fab fa-whatsapp"></i>
+
+        Continuar por WhatsApp
+
+      </a>
+
+    </div>
+  `,
+
+
+  
   "Procedimientos Familiares": `
     <div class="bot-message">
 
