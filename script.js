@@ -158,7 +158,7 @@ const responses = {
       
 
       <a
-      href="https://wa.me/529996082755?text=Hola,%20quiero%20más%20información%20sobre%20Custodia%20y%20convivencia"
+      href="https://wa.me/529996082755?text=Hola,%20quiero%20más%20información%20sobre%20Procedimientos%20familiares"
       target="_blank"
       class="chat-wa-btn">
 
@@ -253,7 +253,7 @@ const responses = {
       • Formalización legal
 
       <a
-      href="https://wa.me/529996082755?text=Hola,%20quiero%20más%20información%20sobre%20Compraventas"
+      href="https://wa.me/529996082755?text=Hola,%20quiero%20más%20información%20sobre%20Servicios%20notariales"
       target="_blank"
       class="chat-wa-btn">
 
