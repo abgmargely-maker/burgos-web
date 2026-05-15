@@ -332,7 +332,7 @@ window.addEventListener('load', () => {
 
       que necesitas y uno de nuestros
 
-      asesores podrá ayudarte.
+      abogados podrá ayudarte.
 
     </div>
 
