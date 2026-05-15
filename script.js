@@ -142,6 +142,37 @@ const responses = {
 
 
 
+  "Procedimientos Familiares": `
+    <div class="bot-message">
+
+      <strong>Custodia y convivencia</strong><br><br>
+
+      Atendemos asuntos relacionados con:
+      <br><br>
+
+      • Sucesión Testamentaria<br>
+      • Sucesión Legítima<br>
+      • Suspensión de Patria Potestad<br>
+      • Reconocimiento de Concubinato<br>
+      • Reconocimiento de Interventor<br>
+      
+
+      <a
+      href="https://wa.me/529996082755?text=Hola,%20quiero%20más%20información%20sobre%20Custodia%20y%20convivencia"
+      target="_blank"
+      class="chat-wa-btn">
+
+        <i class="fab fa-whatsapp"></i>
+
+        Continuar por WhatsApp
+
+      </a>
+
+    </div>
+  `,
+
+
+  
   "Derecho civil": `
     <div class="bot-message">
 
@@ -151,9 +182,9 @@ const responses = {
       <br><br>
 
       • Contratos<br>
-      • Prescripción
-      • Proforma
-      • Hipotecas
+      • Prescripción<br>
+      • Proforma<br>
+      • Hipotecas<br>
       • Daños y perjuicios<br>
       • Incumplimientos<br>
       • Recuperación de adeudos
@@ -183,8 +214,8 @@ const responses = {
       <br><br>
 
       • Cobranza judicial<br>
-      • Cobranza extrajudicial
-      • Juicio ejecutivo mercantil
+      • Cobranza extrajudicial<br>
+      • Juicio ejecutivo mercantil<br>
       • Pagarés<br>
       • Contratos mercantiles<br>
       • Conflictos empresariales
@@ -213,9 +244,9 @@ const responses = {
       Brindamos asesoría en:
       <br><br>
 
-      • Donaciones
-      • Compraventas
-      • Testamentos
+      • Donaciones<br>
+      • Compraventas<br>
+      • Testamentos<br>
       • Operaciones inmobiliarias<br>
       • Revisión de contratos<br>
       • Seguridad patrimonial<br>
