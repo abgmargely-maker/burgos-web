@@ -304,7 +304,41 @@ setTimeout(() => {
 
   chatbot.classList.add("show");
 
-}, 3500);
+}, 4000);
+
+
+
+// =====================================================
+
+// MENSAJE AUTOMATICO INICIAL
+
+// =====================================================
+
+window.addEventListener('load', () => {
+
+  chatResponse.innerHTML = `
+
+    <div class="bot-message">
+
+      Hola 👋
+
+      <br><br>
+
+      Bienvenido a Burgos Abogados.
+
+      <br><br>
+
+      Selecciona el servicio jurídico
+
+      que necesitas y uno de nuestros
+
+      asesores podrá ayudarte.
+
+    </div>
+
+  `;
+
+});
 
 
 
