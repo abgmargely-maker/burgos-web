@@ -1064,8 +1064,7 @@ footer p{
   .faq-grid{
     grid-template-columns:1fr;
   }
-
-   /* =========================================================
+/* =========================================================
    MISION - VISION - VALORES
 ========================================================= */
 
@@ -1205,55 +1204,6 @@ footer p{
 
     grid-template-columns:1fr;
 
-  }
-
-}
-  .contact-grid{
-    grid-template-columns:1fr;
-  }
-
-  .footer-grid{
-    grid-template-columns:1fr;
-
-    text-align:center;
-  }
-
-  .socials{
-    justify-content:center;
-  }
-
-  /* CHATBOT MOBILE */
-
-  .chatbot{
-    width:calc(100vw - 24px);
-
-    right:12px;
-    bottom:86px;
-
-    max-height:76vh;
-  }
-
-  .chatbot-toggle{
-    width:58px;
-    height:58px;
-
-    right:14px;
-    bottom:14px;
-
-    font-size:26px;
-  }
-
-}
-
-
-@media(max-width:480px){
-
-  .hero h2{
-    font-size:30px;
-  }
-
-  .section-title{
-    font-size:28px;
   }
 
 }
