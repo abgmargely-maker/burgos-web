@@ -949,6 +949,77 @@ footer p{
    RESPONSIVE
 ========================================================= */
 
+/* =====================================
+   SECCIÓN CONFIANZA
+===================================== */
+
+#confianza{
+    padding:80px 0;
+    background:#faf8f7;
+}
+
+.confianza-grid{
+    display:flex;
+    align-items:center;
+    gap:60px;
+}
+
+.confianza-image{
+    flex:0 0 420px;
+}
+
+.confianza-image img{
+    width:100%;
+    display:block;
+    border-radius:24px;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+}
+
+.confianza-content{
+    flex:1;
+}
+
+.confianza-content .section-mini{
+    color:#8a9774;
+    font-size:.9rem;
+    font-weight:600;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    margin-bottom:15px;
+}
+
+.confianza-content .section-title{
+    margin-bottom:25px;
+}
+
+.confianza-content .section-text{
+    margin-bottom:30px;
+    max-width:700px;
+}
+
+.trust-list{
+    margin-bottom:35px;
+}
+
+.trust-item{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-bottom:14px;
+    font-size:16px;
+}
+
+.trust-item i{
+    color:#bf7884;
+    font-size:18px;
+}
+
+.confianza-content .btn-primary{
+    width:auto;
+    display:inline-flex;
+    padding:14px 28px;
+}
+
 @media(max-width:1100px){
 
   .hero-grid,
@@ -971,7 +1042,24 @@ footer p{
   section{
     padding:60px 0;
   }
+@media(max-width:1100px){
 
+  .confianza-grid{
+      grid-template-columns:1fr;
+      gap:40px;
+      text-align:center;
+  }
+
+  .confianza-image{
+      max-width:420px;
+      margin:auto;
+  }
+
+  .trust-item{
+      justify-content:center;
+  }
+
+}
   /* HEADER MOBILE */
 
   .navbar{
@@ -1065,73 +1153,3 @@ footer p{
     grid-template-columns:1fr;
   }
 
-/* =====================================
-   SECCIÓN CONFIANZA
-===================================== */
-
-#confianza{
-    padding:80px 0;
-    background:#faf8f7;
-}
-
-.confianza-grid{
-    display:flex;
-    align-items:center;
-    gap:60px;
-}
-
-.confianza-image{
-    flex:0 0 420px;
-}
-
-.confianza-image img{
-    width:100%;
-    display:block;
-    border-radius:24px;
-    box-shadow:0 15px 40px rgba(0,0,0,.08);
-}
-
-.confianza-content{
-    flex:1;
-}
-
-.confianza-content .section-mini{
-    color:#8a9774;
-    font-size:.9rem;
-    font-weight:600;
-    letter-spacing:1px;
-    text-transform:uppercase;
-    margin-bottom:15px;
-}
-
-.confianza-content .section-title{
-    margin-bottom:25px;
-}
-
-.confianza-content .section-text{
-    margin-bottom:30px;
-    max-width:700px;
-}
-
-.trust-list{
-    margin-bottom:35px;
-}
-
-.trust-item{
-    display:flex;
-    align-items:center;
-    gap:12px;
-    margin-bottom:14px;
-    font-size:16px;
-}
-
-.trust-item i{
-    color:#bf7884;
-    font-size:18px;
-}
-
-.confianza-content .btn-primary{
-    width:auto;
-    display:inline-flex;
-    padding:14px 28px;
-}
