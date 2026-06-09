@@ -1064,135 +1064,80 @@ footer p{
   .faq-grid{
     grid-template-columns:1fr;
   }
-/* =========================================================
-   MISION - VISION - VALORES
-========================================================= */
+/* ==========================================
+   CONFIANZA
+========================================== */
 
-#filosofia{
+#confianza{
 
-  background:#ffffff;
+    padding:90px 0;
 
-  padding:90px 0;
-
-}
-
-.section-center{
-
-  text-align:center;
-
-  max-width:850px;
-
-  margin:0 auto 60px;
+    background:#fff;
 
 }
 
-.center{
+.confianza-grid{
 
-  text-align:center;
+    display:grid;
 
-}
+    grid-template-columns:420px 1fr;
 
-.filosofia-grid{
+    gap:60px;
 
-  display:grid;
-
-  grid-template-columns:repeat(3,1fr);
-
-  gap:30px;
+    align-items:center;
 
 }
 
-.filosofia-card{
+.confianza-image{
 
-  background:white;
-
-  border:1px solid #ece2de;
-
-  border-radius:22px;
-
-  padding:40px 30px;
-
-  transition:.3s;
-
-  box-shadow:
-  0 10px 25px rgba(0,0,0,.04);
+    position:relative;
 
 }
 
-.filosofia-card:hover{
+.confianza-image img{
 
-  transform:translateY(-8px);
+    width:100%;
 
-  box-shadow:
-  0 18px 35px rgba(0,0,0,.08);
+    border-radius:25px;
 
-}
-
-.filosofia-icon{
-
-  width:70px;
-
-  height:70px;
-
-  margin-bottom:24px;
-
-  border-radius:50%;
-
-  background:#f5ece9;
-
-  display:flex;
-
-  align-items:center;
-
-  justify-content:center;
+    box-shadow:
+    0 20px 50px rgba(0,0,0,.08);
 
 }
 
-.filosofia-icon i{
+.confianza-content .section-title{
 
-  font-size:28px;
-
-  color:#bf7884;
+    margin-bottom:25px;
 
 }
 
-.filosofia-card h3{
+.trust-list{
 
-  font-size:24px;
-
-  color:#bf7884;
-
-  margin-bottom:18px;
-
-  font-weight:700;
+    margin:30px 0;
 
 }
 
-.filosofia-card p{
+.trust-item{
 
-  font-size:15px;
+    display:flex;
 
-  line-height:1.9;
+    align-items:center;
 
-  color:#555;
+    gap:12px;
+
+    margin-bottom:18px;
+
+    font-size:16px;
+
+    color:#444;
 
 }
 
-.filosofia-card ul{
+.trust-item i{
 
-  padding-left:18px;
+    color:#bf7884;
 
-}
-
-.filosofia-card li{
-
-  margin-bottom:12px;
-
-  line-height:1.8;
-
-  color:#555;
-
-  font-size:15px;
+    font-size:18px;
 
 }
 
@@ -1200,10 +1145,12 @@ footer p{
 
 @media(max-width:900px){
 
-  .filosofia-grid{
+    .confianza-grid{
 
-    grid-template-columns:1fr;
+        grid-template-columns:1fr;
 
-  }
+        gap:35px;
+
+    }
 
 }
