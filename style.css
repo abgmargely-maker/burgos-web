@@ -173,7 +173,7 @@ nav a.active::after{
   font-weight:600;
 
   box-shadow:
-  0 10px 24px rgba(191,120,132,.22);
+  0 10px 24px rgba(141,146,116,.25);
 
   transition:.25s;
 }
@@ -187,8 +187,8 @@ nav a.active::after{
     #8d9274,
     #767b60
   );
-}
 
+}
 .btn-secondary{
   padding:15px 26px;
 
