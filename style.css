@@ -1065,95 +1065,73 @@ footer p{
     grid-template-columns:1fr;
   }
 
-
-/* ==========================================
-   CONFIANZA
-========================================== */
+/* =====================================
+   SECCIÓN CONFIANZA
+===================================== */
 
 #confianza{
-
-    padding:90px 0;
-
-    background:#fff;
-
+    padding:80px 0;
+    background:#faf8f7;
 }
 
 .confianza-grid{
-
-    display:grid;
-
-    grid-template-columns:420px 1fr;
-
-    gap:60px;
-
+    display:flex;
     align-items:center;
-
+    gap:60px;
 }
 
 .confianza-image{
-
-    position:relative;
-
+    flex:0 0 420px;
 }
 
 .confianza-image img{
-
     width:100%;
+    display:block;
+    border-radius:24px;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+}
 
-    border-radius:25px;
+.confianza-content{
+    flex:1;
+}
 
-    box-shadow:
-    0 20px 50px rgba(0,0,0,.08);
-
+.confianza-content .section-mini{
+    color:#8a9774;
+    font-size:.9rem;
+    font-weight:600;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    margin-bottom:15px;
 }
 
 .confianza-content .section-title{
-
     margin-bottom:25px;
+}
 
+.confianza-content .section-text{
+    margin-bottom:30px;
+    max-width:700px;
 }
 
 .trust-list{
-
-    margin:30px 0;
-
+    margin-bottom:35px;
 }
 
 .trust-item{
-
     display:flex;
-
     align-items:center;
-
     gap:12px;
-
-    margin-bottom:18px;
-
+    margin-bottom:14px;
     font-size:16px;
-
-    color:#444;
-
 }
 
 .trust-item i{
-
     color:#bf7884;
-
     font-size:18px;
-
 }
 
-/* RESPONSIVE */
-
-@media(max-width:900px){
-
-    .confianza-grid{
-
-        grid-template-columns:1fr;
-
-        gap:35px;
-
-    }
-
-}
+.confianza-content .btn-primary{
+    width:auto;
+    display:inline-flex;
+    padding:14px 28px;
 }
