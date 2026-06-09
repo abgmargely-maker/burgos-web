@@ -36,8 +36,11 @@ a{
 
 :root{
 
-  --primary:#8d9274;
-  --primary-dark:#767b60;
+  --primary:#bf7884;
+  --primary-dark:#a96470;
+
+  --green:#8d9274;
+  --green-dark:#767b60;
 
   --text:#2c2c2c;
 
@@ -45,11 +48,7 @@ a{
 
   --border:#eadfdb;
 
-  --shadow:
-  0 10px 35px rgba(0,0,0,.08);
-
 }
-
 
 /* =========================================================
    CONTAINER
@@ -148,13 +147,18 @@ nav a.active::after{
    BOTONES
 ========================================================= */
 
+/* =========================================================
+   BOTONES
+========================================================= */
+
 .btn-top,
 .btn-primary{
+
   background:
   linear-gradient(
     to right,
-    #9aa082,
-    #8d9274
+    var(--green),
+    var(--green-dark)
   );
 
   color:white;
@@ -181,22 +185,26 @@ nav a.active::after{
 .btn-top:hover,
 .btn-primary:hover{
 
+  transform:translateY(-2px);
+
   background:
   linear-gradient(
     to right,
-    #8d9274,
-    #767b60
+    #7e8367,
+    #6f745a
   );
 
 }
+
 .btn-secondary{
+
   padding:15px 26px;
 
-  border:1px solid #8d9274;
+  border:1px solid var(--green);
 
   border-radius:999px;
 
-  color:#8d9274;
+  color:var(--green);
 
   background:white;
 
@@ -207,9 +215,10 @@ nav a.active::after{
 }
 
 .btn-secondary:hover{
-  background:#f4f6ef;
-}
 
+  background:#f4f6ef;
+
+}
 
 /* =========================================================
    HERO
@@ -312,19 +321,24 @@ section{
   padding:90px 0;
 }
 
-.section-title{
-  font-size:42px;
+/* =========================================================
+   TÍTULOS PRINCIPALES
+========================================================= */
 
-  color:var(--primary);
+.section-title,
+#areas h2,
+#faq h2,
+#contacto h2,
+#confianza h2{
 
-  margin-bottom:14px;
+    color:#bf7884 !important;
 
-  font-weight:800;
 }
-
 .section-mini{
-  color:#8d9274;
 
+    color:#8d9274 !important;
+
+}
   font-weight:600;
 
   margin-bottom:14px;
@@ -761,18 +775,17 @@ footer p{
   background:
   linear-gradient(
     to right,
-    #9aa082,
-    #8d9274
+    var(--green),
+    var(--green-dark)
   );
 
-}
   color:white;
 
   padding:22px 22px 18px;
 
   flex-shrink:0;
-}
 
+}
 
 /* HEADER TOP */
 
@@ -953,97 +966,84 @@ footer p{
   0 18px 40px rgba(37,211,102,.38);
 }
 
+/* =========================================================
+   CONFIANZA
+========================================================= */
+
+#confianza{
+
+    padding:80px 0;
+
+    background:#faf8f7;
+
+}
+
+.confianza-grid{
+
+    display:grid;
+
+    grid-template-columns:420px 1fr;
+
+    gap:60px;
+
+    align-items:center;
+
+}
+
+.confianza-image img{
+
+    width:100%;
+
+    border-radius:24px;
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.08);
+
+}
+
+.confianza-content .section-title{
+
+    color:#bf7884;
+
+    margin-bottom:25px;
+
+}
+
+.confianza-content .section-text{
+
+    margin-bottom:30px;
+
+}
+
+.trust-list{
+
+    margin-bottom:35px;
+
+}
+
+.trust-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-bottom:14px;
+
+    font-size:16px;
+
+}
+
+.trust-item i{
+
+    color:#bf7884;
+
+}
 
 /* =========================================================
    RESPONSIVE
 ========================================================= */
-
-/* =====================================
-   SECCIÓN CONFIANZA
-===================================== */
-
-#confianza{
-    padding:80px 0;
-    background:#faf8f7;
-}
-
-.confianza-grid{
-    display:flex;
-    align-items:center;
-    gap:60px;
-}
-
-.confianza-image{
-    flex:0 0 420px;
-}
-
-.confianza-image img{
-    width:100%;
-    display:block;
-    border-radius:24px;
-    box-shadow:0 15px 40px rgba(0,0,0,.08);
-}
-
-.confianza-content{
-    flex:1;
-}
-
-.confianza-content .section-mini{
-    color:#8a9774;
-    font-size:.9rem;
-    font-weight:600;
-    letter-spacing:1px;
-    text-transform:uppercase;
-    margin-bottom:15px;
-}
-
-.confianza-content .section-title{
-    margin-bottom:25px;
-}
-
-.confianza-content .section-text{
-    margin-bottom:30px;
-    max-width:700px;
-}
-
-.trust-list{
-    margin-bottom:35px;
-}
-
-.trust-item{
-    display:flex;
-    align-items:center;
-    gap:12px;
-    margin-bottom:14px;
-    font-size:16px;
-}
-
-.trust-item i{
-    color:#bf7884;
-    font-size:18px;
-}
-
-.confianza-content .btn-primary{
-    width:auto;
-    display:inline-flex;
-    padding:14px 28px;
-}
-
-@media(max-width:1100px){
-
-  .hero-grid,
-  .practice-header,
-  .faq-grid,
-  .contact-grid,
-  .footer-grid{
-    grid-template-columns:1fr;
-  }
-
-  .cards{
-    grid-template-columns:1fr 1fr;
-  }
-
-}
 
 
 @media(max-width:768px){
@@ -1051,25 +1051,29 @@ footer p{
   section{
     padding:60px 0;
   }
-@media(max-width:1100px){
+.confianza-grid{
 
-  .confianza-grid{
-      grid-template-columns:1fr;
-      gap:40px;
-      text-align:center;
-  }
+    grid-template-columns:1fr;
 
-  .confianza-image{
-      max-width:420px;
-      margin:auto;
-  }
-
-  .trust-item{
-      justify-content:center;
-  }
+    text-align:center;
 
 }
-  /* HEADER MOBILE */
+
+.trust-item{
+
+    justify-content:center;
+
+}
+
+.confianza-image{
+
+    max-width:420px;
+
+    margin:auto;
+
+}
+
+/* HEADER MOBILE */
 
   .navbar{
     display:flex;
