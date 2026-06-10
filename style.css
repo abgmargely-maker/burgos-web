@@ -1263,4 +1263,36 @@ footer p{
         text-align:left !important;
     }
 }
+
+/* =====================================
+   HEADER MÓVIL
+===================================== */
+
+@media screen and (max-width:768px){
+
+    /* Ocultar menú */
+    nav{
+        display:none !important;
+    }
+
+    /* Ocultar botón WhatsApp superior */
+    .btn-top{
+        display:none !important;
+    }
+
+    /* Mantener logo a la izquierda */
+    .navbar{
+        justify-content:flex-start !important;
+    }
+
+    .logo{
+        margin:0;
+    }
+
+    .logo img{
+        width:150px;
+        height:auto;
+    }
+
+}
 }
