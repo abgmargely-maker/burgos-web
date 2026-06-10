@@ -982,9 +982,6 @@ footer p{
   0 18px 40px rgba(37,211,102,.38);
 }
 
-/* =========================================================
-   CONFIANZA
-========================================================= */
 
 /* =========================================================
    CONFIANZA
@@ -1323,5 +1320,29 @@ footer p{
         width:100%;
         height:56px;
     }
+}
+
+@media screen and (max-width:768px){
+
+    nav{
+        display:none !important;
+    }
+
+    .btn-top{
+        display:none !important;
+    }
+
+    .navbar{
+        justify-content:center !important;
+    }
+
+    .logo{
+        margin:auto;
+    }
+
+    .logo img{
+        width:160px;
+    }
+
 }
 }
