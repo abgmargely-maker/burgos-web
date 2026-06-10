@@ -1234,12 +1234,7 @@ footer p{
 
 @media screen and (max-width:768px){
 
-    /* Ocultar imagen lateral */
-    .confianza-image{
-        display:none !important;
-    }
-
-    /* Una sola columna */
+      /* Una sola columna */
     .confianza-grid{
         display:block !important;
     }
@@ -1291,6 +1286,36 @@ footer p{
 
     .logo img{
         width:150px;
+        height:auto;
+    }
+
+
+/* =====================================
+   SECCIÓN CONFIANZA MÓVIL
+===================================== */
+
+@media screen and (max-width:768px){
+
+    .confianza-grid{
+        display:flex;
+        flex-direction:column;
+    }
+
+    .confianza-content{
+        order:1;
+    }
+
+    .confianza-image{
+        order:2;
+        margin-top:30px;
+        width:100%;
+        display:flex;
+        justify-content:center;
+    }
+
+    .confianza-image img{
+        max-width:380px;
+        width:100%;
         height:auto;
     }
 
