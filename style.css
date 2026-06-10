@@ -1179,104 +1179,28 @@ footer p{
 ========================================================= */
 
 
-@media screen and (max-width:768px){
+@media (max-width:768px){
 
-    .hero-grid,
-    .faq-grid,
-    .contact-grid,
-    .confianza-grid{
-        grid-template-columns:1fr;
-    }
+  .hero-grid{
+      grid-template-columns:1fr;
+      gap:30px;
+  }
 
-    .hero-content,
-    .section-title,
-    .section-text,
-    .section-mini,
-    .contact-info,
-    .faq-text,
-    .confianza-content{
-        text-align:left !important;
-    }
+  .hero-content{
+      text-align:left;
+  }
 
-    .hero h2{
-        font-size:36px;
-    }
+  .hero-image-full{
+      display:flex;
+      justify-content:center;
+  }
 
-    .hero p{
-        font-size:15px;
-        margin-left:0;
-        margin-right:0;
-    }
+  .hero-image-full img{
+      width:100%;
+      max-width:420px;
+      height:auto;
+  }
 
-    .cards{
-        grid-template-columns:1fr;
-    }
-
-    .confianza-image{
-        display:none !important;
-    }
-
-    .trust-item{
-        justify-content:flex-start;
-        text-align:left;
-    }
-
-    nav{
-        display:none;
-    }
-
-    .logo img{
-        width:140px;
-    }
-
-    .hero-image-full{
-        display:flex;
-        justify-content:center;
-    }
-
-    .hero-image-full img{
-        display:block;
-        width:100%;
-        max-width:420px;
-        height:auto;
-    }
-
-    .hero-actions{
-        flex-direction:column;
-        gap:12px;
-    }
-
-    .hero-actions .btn-primary,
-    .hero-actions .btn-secondary{
-        width:100%;
-        height:58px;
-    }
-
-    .footer-grid{
-        grid-template-columns:1fr;
-        text-align:left;
-    }
-}
-
-@media screen and (min-width:769px) and (max-width:1100px){
-
-    .hero-grid,
-    .faq-grid,
-    .contact-grid,
-    .confianza-grid{
-        grid-template-columns:1fr;
-    }
-
-    .hero-content,
-    .contact-info,
-    .faq-text,
-    .confianza-content{
-        text-align:left;
-    }
-
-    .hero-image-full img{
-        max-width:500px;
-    }
 }
 
 /* =====================================
