@@ -1070,8 +1070,9 @@ footer p{
 @media(max-width:768px){
 
   section{
-    padding:60px 0;
-  }
+  padding:70px 0;
+}
+  
 .confianza-grid{
 
     grid-template-columns:1fr;
@@ -1080,6 +1081,17 @@ footer p{
 
 }
 
+   @media (max-width:768px){
+
+    section{
+        padding:50px 0;
+    }
+
+    #confianza{
+        padding-top:30px;
+    }
+
+}
 .trust-item{
 
     justify-content:center;
@@ -1333,8 +1345,21 @@ footer p{
 
 @media (max-width:768px){
 
+    .confianza-grid{
+        display:flex;
+        flex-direction:column;
+        gap:25px;
+    }
+
+    .confianza-content{
+        order:1;
+    }
+
     .confianza-image{
-        display:none;
+        order:2;
+    }
+
+}
 
 
 }
