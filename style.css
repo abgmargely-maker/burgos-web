@@ -1234,7 +1234,14 @@ footer p{
         right:10px;
         bottom:90px;
     }
+/* TÍTULOS DE SERVICIOS */
 
+.card h3{
+    color:#8d9274;
+    font-size:24px;
+    margin-bottom:14px;
+    font-weight:700;
 }
+
 
 }
