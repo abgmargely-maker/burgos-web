@@ -1291,5 +1291,48 @@ footer p{
         height:auto;
     }
 
+/* =====================================
+   AJUSTE HERO + CONFIANZA
+===================================== */
 
+/* Reducir espacio inferior del Hero */
+.hero{
+    padding-bottom:40px;
+}
+
+/* Acercar sección Confianza al Hero */
+#confianza{
+    padding-top:40px;
+}
+
+/* Mantener diseño elegante */
+.confianza-grid{
+    display:grid;
+    grid-template-columns:420px 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+/* Móviles */
+@media screen and (max-width:768px){
+
+    #confianza{
+        padding-top:25px;
+    }
+
+    .confianza-grid{
+        grid-template-columns:1fr;
+        gap:30px;
+    }
+
+    .confianza-image{
+        display:flex;
+        justify-content:center;
+    }
+
+    .confianza-image img{
+        width:100%;
+        max-width:420px;
+    }
+}
 }
