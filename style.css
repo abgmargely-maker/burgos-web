@@ -1145,16 +1145,14 @@ footer p{
 
     /* CONFIANZA */
 
-    .confianza-grid{
-        display:block;
-    }
+    <div class="confianza-grid">
 
-    .confianza-image{
-        display:none;
-    }
+    <div class="confianza-image">
+        <img src="assets/confianza-burgos.png" alt="Burgos Abogados">
+    </div>
 
-    .confianza-content{
-        text-align:left;
+    <div class="confianza-content">
+       
     }
 
     .trust-item{
