@@ -1229,68 +1229,34 @@ footer p{
   }
 
 }
-
-/* =====================================
-   AJUSTES MÓVILES
+       /* =====================================
+   SECCIÓN CONFIANZA MÓVIL
 ===================================== */
 
 @media screen and (max-width:768px){
 
-      /* Una sola columna */
     .confianza-grid{
-        display:block !important;
+        display:flex;
+        flex-direction:column;
     }
 
-    /* Reducir espacio superior */
-    #confianza{
-        padding-top:30px !important;
+    .confianza-content{
+        order:1;
     }
 
-    /* Textos alineados a la izquierda */
-    .confianza-content,
-    .section-title,
-    .section-text,
-    .section-mini{
-        text-align:left !important;
+    .confianza-image{
+        order:2;
+        margin-top:30px;
+        width:100%;
+        display:flex;
+        justify-content:center;
     }
 
-    /* Lista */
-    .trust-item{
-        justify-content:flex-start !important;
-        text-align:left !important;
-    }
-}
-
-/* =====================================
-   HEADER MÓVIL
-===================================== */
-
-@media screen and (max-width:768px){
-
-    /* Ocultar menú */
-    nav{
-        display:none !important;
-    }
-
-    /* Ocultar botón WhatsApp superior */
-    .btn-top{
-        display:none !important;
-    }
-
-    /* Mantener logo a la izquierda */
-    .navbar{
-        justify-content:flex-start !important;
-    }
-
-    .logo{
-        margin:0;
-    }
-
-    .logo img{
-        width:150px;
+    .confianza-image img{
+        max-width:380px;
+        width:100%;
         height:auto;
     }
-
 /* =====================================
    AJUSTE HERO + CONFIANZA
 ===================================== */
@@ -1335,4 +1301,6 @@ footer p{
         max-width:420px;
     }
 }
+}
+
 }
