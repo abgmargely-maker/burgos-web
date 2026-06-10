@@ -1292,34 +1292,4 @@ footer p{
     }
 
 
-/* =====================================
-   SECCIÓN CONFIANZA MÓVIL
-===================================== */
-
-@media screen and (max-width:768px){
-
-    .confianza-grid{
-        display:flex;
-        flex-direction:column;
-    }
-
-    .confianza-content{
-        order:1;
-    }
-
-    .confianza-image{
-        order:2;
-        margin-top:30px;
-        width:100%;
-        display:flex;
-        justify-content:center;
-    }
-
-    .confianza-image img{
-        max-width:380px;
-        width:100%;
-        height:auto;
-    }
-
-}
 }
