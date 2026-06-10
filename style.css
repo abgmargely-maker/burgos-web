@@ -355,15 +355,13 @@ section{
     color:#bf7884 !important;
 
 }
-.section-mini{
 
+.section-mini{
     color:#8d9274 !important;
     font-weight:600;
     margin-bottom:14px;
     font-size:14px;
     letter-spacing:.5px;
-
-}
 }
 
 .section-text{
@@ -1076,19 +1074,6 @@ footer p{
 
     text-align:center;
 
-}
-
-   @media (max-width:768px){
-
-    section{
-        padding:50px 0;
-    }
-
-    #confianza{
-        padding-top:30px;
-    }
-
-}
 .trust-item{
 
     justify-content:center;
