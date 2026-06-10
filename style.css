@@ -1120,8 +1120,8 @@ footer p{
   }
 
   .hero-content{
-    text-align:center;
-  }
+    text-align:left;
+}
 
   .hero h2{
     font-size:36px;
@@ -1135,13 +1135,9 @@ footer p{
   }
 
   .hero-actions{
-    flex-direction:column;
-
-    width:100%;
-
-    justify-content:center;
-    align-items:center;
-  }
+    justify-content:flex-start;
+    align-items:flex-start;
+}
 
   .btn-primary,
   .btn-secondary{
@@ -1166,3 +1162,125 @@ footer p{
     grid-template-columns:1fr;
   }
 
+/* =========================================================
+   MÓVILES Y TABLETS MÁS PROFESIONALES
+========================================================= */
+
+@media (max-width: 768px){
+
+    .section-title,
+    .section-text,
+    .section-mini,
+    .contact-info,
+    .faq-text,
+    .confianza-content{
+        text-align:left !important;
+    }
+
+    .hero-content{
+        text-align:left !important;
+    }
+
+    .hero p{
+        margin-left:0;
+        margin-right:0;
+    }
+
+    .hero-actions{
+        align-items:flex-start;
+        justify-content:flex-start;
+    }
+
+    .practice-header{
+        text-align:left;
+    }
+
+    .contact-info h2,
+    .contact-info h4{
+        text-align:left;
+    }
+
+    .trust-item{
+        justify-content:flex-start !important;
+        text-align:left;
+    }
+
+    .faq-grid{
+        gap:35px;
+    }
+
+    .faq-left{
+        text-align:left;
+    }
+
+    .faq-illustration{
+        height:auto;
+        margin-top:20px;
+    }
+
+    .faq-circle{
+        width:220px;
+        height:220px;
+    }
+
+    .faq-dot{
+        right:15px;
+        bottom:40px;
+    }
+
+    .cards .card{
+        text-align:left;
+        padding:30px 24px;
+    }
+
+    .card i{
+        margin-bottom:15px;
+    }
+
+    .card h3{
+        font-size:22px;
+    }
+
+    .card p{
+        font-size:14px;
+    }
+
+    .contact-item{
+        justify-content:flex-start;
+    }
+
+    .btn-primary,
+    .btn-secondary{
+        width:100%;
+        text-align:center;
+        justify-content:center;
+    }
+
+    .footer-grid{
+        text-align:left;
+    }
+
+    .socials{
+        justify-content:flex-start;
+    }
+
+}
+   @media (min-width:769px) and (max-width:1100px){
+
+    .hero-content,
+    .practice-header,
+    .faq-text,
+    .contact-info,
+    .confianza-content{
+        text-align:left;
+    }
+
+    .hero-actions{
+        justify-content:flex-start;
+    }
+
+    .trust-item{
+        justify-content:flex-start;
+    }
+
+}
