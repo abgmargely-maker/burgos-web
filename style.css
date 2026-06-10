@@ -2,7 +2,7 @@
    RESET
 ========================================================= */
 
-{
+*{
   margin:0;
   padding:0;
   box-sizing:border-box;
@@ -1070,10 +1070,8 @@ footer p{
 
 }
 
-}
-
 /* =========================================================
-   RESPONSIVE
+   RESPONSIVE MÓVIL
 ========================================================= */
 
 @media screen and (max-width:768px){
@@ -1081,27 +1079,36 @@ footer p{
     /* HEADER */
 
     .navbar{
-        gap:12px;
+        justify-content:flex-start;
+        padding:15px 0;
+    }
+
+    .logo{
+        margin:0;
     }
 
     .logo img{
-        width:140px;
+        width:150px;
     }
 
-    nav{
-        display:none;
-    }
-
+    nav,
     .btn-top{
-        padding:10px 14px;
-        font-size:12px;
+        display:none !important;
     }
 
     /* HERO */
 
+    .hero{
+        padding:40px 0 50px;
+    }
+
     .hero-grid{
         grid-template-columns:1fr;
         gap:35px;
+    }
+
+    .hero-content{
+        text-align:left;
     }
 
     .hero h2{
@@ -1110,15 +1117,18 @@ footer p{
 
     .hero p{
         font-size:15px;
+        max-width:100%;
     }
 
     .hero-actions{
         flex-direction:column;
+        gap:12px;
     }
 
     .hero-actions .btn-primary,
     .hero-actions .btn-secondary{
         width:100%;
+        flex:none;
     }
 
     .hero-image-full{
@@ -1128,7 +1138,44 @@ footer p{
 
     .hero-image-full img{
         width:100%;
-        max-width:450px;
+        max-width:420px;
+        height:auto;
+    }
+
+    /* CONFIANZA */
+
+    #confianza{
+        padding-top:25px;
+        padding-bottom:70px;
+    }
+
+    .confianza-grid{
+        display:flex;
+        flex-direction:column;
+        gap:30px;
+    }
+
+    .confianza-content{
+        order:1;
+        text-align:left;
+    }
+
+    .confianza-image{
+        order:2;
+        width:100%;
+        display:flex;
+        justify-content:center;
+        margin-top:10px;
+    }
+
+    .confianza-image img{
+        width:100%;
+        max-width:420px;
+        height:auto;
+    }
+
+    .trust-item{
+        justify-content:flex-start;
     }
 
     /* SERVICIOS */
@@ -1143,26 +1190,6 @@ footer p{
         grid-template-columns:1fr;
     }
 
-    
-   /* CONFIANZA */
-
-    .confianza-grid{
-        display:block;
-   
-
-    .confianza-image{
-        display:none;
-    }
-    
-
-    .confianza-content{
-        text-align:left;
-  
-
-    .trust-item{
-
-    }
-       
     /* FAQ */
 
     .faq-grid{
@@ -1197,110 +1224,17 @@ footer p{
 
     .footer-grid{
         grid-template-columns:1fr;
-        gap:40px;
+        gap:35px;
     }
 
-}
-/* =========================================================
-   MÓVILES Y TABLETS MÁS PROFESIONALES
-========================================================= */
+    /* CHATBOT */
 
-
-@media (max-width:768px){
-
-  .hero-grid{
-      grid-template-columns:1fr;
-      gap:30px;
-  }
-
-  .hero-content{
-      text-align:left;
-  }
-
-  .hero-image-full{
-      display:flex;
-      justify-content:center;
-  }
-
-  .hero-image-full img{
-      width:100%;
-      max-width:420px;
-      height:auto;
-  }
-
-}
-       /* =====================================
-   SECCIÓN CONFIANZA MÓVIL
-===================================== */
-
-@media screen and (max-width:768px){
-
-    .confianza-grid{
-        display:flex;
-        flex-direction:column;
+    .chatbot{
+        width:calc(100vw - 20px);
+        right:10px;
+        bottom:90px;
     }
 
-    .confianza-content{
-        order:1;
-    }
-
-    .confianza-image{
-        order:2;
-        margin-top:30px;
-        width:100%;
-        display:flex;
-        justify-content:center;
-    }
-
-    .confianza-image img{
-        max-width:380px;
-        width:100%;
-        height:auto;
-    }
-/* =====================================
-   AJUSTE HERO + CONFIANZA
-===================================== */
-
-/* Reducir espacio inferior del Hero */
-.hero{
-    padding-bottom:40px;
-}
-
-/* Acercar sección Confianza al Hero */
-#confianza{
-    padding-top:40px;
-}
-
-/* Mantener diseño elegante */
-.confianza-grid{
-    display:grid;
-    grid-template-columns:420px 1fr;
-    gap:60px;
-    align-items:center;
-}
-
-/* Móviles */
-@media screen and (max-width:768px){
-
-    #confianza{
-        padding-top:25px;
-    }
-
-    .confianza-grid{
-        grid-template-columns:1fr;
-        gap:30px;
-    }
-
-    .confianza-image{
-        display:flex;
-        justify-content:center;
-    }
-
-    .confianza-image img{
-        width:100%;
-        max-width:420px;
-    }
-}
 }
 
 }
