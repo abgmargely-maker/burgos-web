@@ -636,7 +636,9 @@ section{
 }
 
 .contact-item i{
-  color:var(--primary);
+    color:#8d9274;
+    font-size:18px;
+    min-width:22px;
 }
 
 .map{
