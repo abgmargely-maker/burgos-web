@@ -1344,23 +1344,9 @@ footer p{
 }
 
 @media (max-width:768px){
-
-    .confianza-grid{
-        display:flex;
-        flex-direction:column;
-        gap:25px;
-    }
-
-    .confianza-content{
-        order:1;
-    }
-
     .confianza-image{
-        order:2;
+        display:none;
     }
 
 }
-
-
-}
-}
+   
