@@ -1,7 +1,7 @@
 const chat=document.getElementById('chatbot');const toggle=document.getElementById('toggleChat');const close=document.getElementById('closeChat');const response=document.getElementById('chatResponse');const options=[...document.querySelectorAll('.chat-option')];function showChat(open){chat.classList.toggle('show',open);chat.setAttribute('aria-hidden',String(!open));toggle.setAttribute('aria-expanded',String(open));if(open)close.focus();else toggle.focus()}toggle.addEventListener('click',()=>showChat(!chat.classList.contains('show')));close.addEventListener('click',()=>showChat(false));document.addEventListener('keydown',e=>{if(e.key==='Escape'&&chat.classList.contains('show'))showChat(false)});function choose(service){showChat(true);options.forEach(b=>b.classList.toggle('active-option',b.dataset.service===service));response.replaceChildren();const box=document.createElement('div');box.className='bot-message';box.textContent='Gracias por tu interés en '+service+'. Podemos orientarte de forma personalizada. Continúa por WhatsApp para compartirnos brevemente tu situación.';const a=document.createElement('a');a.className='chat-wa-btn';a.target='_blank';a.rel='noopener';a.href='https://wa.me/529996082755?text='+encodeURIComponent('Hola, me comunico desde la página web de Burgos Abogados. Deseo asesoría sobre: '+service+'.');a.innerHTML='<i class="fa-brands fa-whatsapp"></i> Continuar por WhatsApp';response.append(box,a);response.scrollIntoView({block:'nearest',behavior:'smooth'})}document.querySelectorAll('[data-service]').forEach(b=>b.addEventListener('click',()=>choose(b.dataset.service)))
-// ======================================================
-// CHATBOT
-// ======================================================
+
+
+// ======================================================// CHATBOT // ======================================================
 
 const chatbot = document.getElementById("chatbot");
 
