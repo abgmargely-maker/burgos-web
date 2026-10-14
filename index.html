@@ -59,4 +59,176 @@
 <div class="chatbot" id="chatbot" role="dialog" aria-label="Asistente de Burgos Abogados" aria-hidden="true"><div class="chat-header"><img src="assets/logo.icono.png" alt=""><div><h3>Burgos Abogados</h3><p>¿En qué podemos ayudarte?</p></div><button id="closeChat" aria-label="Cerrar asistente"><i class="fa-solid fa-xmark"></i></button></div><div class="chat-body"><p class="chat-greeting">Selecciona el servicio sobre el que deseas recibir información:</p><div class="chat-options">
 <button class="chat-option" data-service="Divorcios">Divorcios</button><button class="chat-option" data-service="Pensión alimenticia">Pensión alimenticia</button><button class="chat-option" data-service="Custodia y convivencia">Custodia y convivencia</button><button class="chat-option" data-service="Procedimientos familiares">Procedimientos familiares</button><button class="chat-option" data-service="Derecho civil">Derecho civil</button><button class="chat-option" data-service="Derecho mercantil">Derecho mercantil</button><button class="chat-option" data-service="Amparo">Amparo</button><button class="chat-option" data-service="Gestión notarial">Gestión notarial</button><button class="chat-option" data-service="Operaciones patrimoniales">Operaciones patrimoniales</button></div><div id="chatResponse" class="chat-response" aria-live="polite"></div></div></div>
 <button class="chatbot-toggle" id="toggleChat" aria-label="Abrir asistente de WhatsApp" aria-expanded="false"><i class="fa-brands fa-whatsapp"></i></button>
-<script src="script.js" defer></script></body></html>
+<script src="script.js" defer></script>
+<!-- =====================================================
+
+     CHATBOT
+
+===================================================== -->
+
+<div class="chatbot" id="chatbot">
+
+  <!-- HEADER -->
+
+  <div class="chat-header">
+
+    <div class="chat-header-top">
+
+      <!-- LOGO -->
+
+      <img
+
+      src="assets/logo.icono.png"
+
+      alt="Burgos Abogados">
+
+      <!-- TEXTO -->
+
+      <div>
+
+        <h3>
+
+          Burgos Abogados
+
+        </h3>
+
+        <p>
+
+          Selecciona el servicio que necesitas
+
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- OPCIONES -->
+
+  <div class="chat-options">
+
+    <div
+
+    class="chat-option"
+
+    data-service="Divorcios">
+
+      <i class="fa-solid fa-users"></i>
+
+      Divorcios
+
+    </div>
+
+    <div
+
+    class="chat-option"
+
+    data-service="Pensión alimenticia">
+
+      <i class="fa-solid fa-hand-holding-dollar"></i>
+
+      Pensión alimenticia
+
+    </div>
+
+    <div
+
+    class="chat-option"
+
+    data-service="Custodia y convivencia">
+
+      <i class="fa-solid fa-people-roof"></i>
+
+      Custodia y convivencia
+
+    </div>
+
+    <div
+      
+    class="chat-option"
+    
+    data-service="Procedimientos familiares">
+
+      <i class="fa-solid fa-people-roof"></i>
+
+     Procedimientos familiares
+
+    </div>
+
+    <div
+
+    class="chat-option"
+
+    data-service="Derecho civil">
+
+      <i class="fa-solid fa-scale-balanced"></i>
+
+      Derecho civil
+
+    </div>
+
+    <div
+
+    class="chat-option"
+
+    data-service="Derecho mercantil">
+
+      <i class="fa-solid fa-briefcase"></i>
+
+      Derecho mercantil
+
+    </div>
+
+    <div
+
+    class="chat-option"
+
+    data-service="Servicios notariales">
+
+      <i class="fa-solid fa-house"></i>
+
+      Servicios notariales
+
+    </div>
+
+   
+  </div>
+
+  <!-- RESPUESTA -->
+
+  <div
+
+  class="chat-response"
+
+  id="chatResponse">
+
+  </div>
+
+</div>
+
+<!-- =====================================================
+
+     BOTON FLOTANTE
+
+===================================================== -->
+
+<button
+
+class="chatbot-toggle"
+
+id="toggleChat">
+
+  <i class="fab fa-whatsapp"></i>
+
+</button>
+
+<!-- =====================================================
+
+     SCRIPT
+
+===================================================== -->
+
+<script src="script.js"></script>
+
+</body></html>
