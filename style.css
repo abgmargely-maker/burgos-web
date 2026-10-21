@@ -15,3 +15,141 @@ footer{background:#252a26;color:white;padding:65px 0 0}.footer-grid{display:grid
 @media(max-width:650px){html{scroll-padding-top:72px}.container{width:calc(100% - 36px)}.section{padding:58px 0}.hero{padding:40px 0 45px}.hero-grid{grid-template-columns:minmax(0,1fr);gap:35px}.hero h1{font-size:clamp(33px,9vw,43px);letter-spacing:-.045em}.hero p{font-size:15px}.hero-actions{flex-direction:column}.hero-visual{max-width:480px;width:100%;margin:auto}.hero-visual img{aspect-ratio:1.18;object-fit:contain;background:#f3ebe8;box-shadow:10px 10px 0 #bf78841c}.visual-caption{font-size:9px}.hero-note{font-size:10px}.value-inner{display:grid;grid-template-columns:1fr 1fr;text-align:center;gap:17px 8px}.value-inner span{font-size:9px}.confianza-grid{display:flex;flex-direction:column;align-items:stretch;gap:30px}.confianza-content{order:1}.confianza-image{order:2;width:100%}.confianza-image img{max-width:100%;box-shadow:9px 9px 0 var(--cream)}.section-head{display:block;margin-bottom:30px}.section-head>p{margin-top:18px}.cards{grid-template-columns:minmax(0,1fr);gap:12px}.service-card{min-height:235px;padding:25px}.service-card>i{margin-bottom:14px}.statement{padding:60px 0}.faq-grid,.contact-grid{grid-template-columns:minmax(0,1fr);gap:35px}.faq-intro img{max-width:250px;margin-top:20px}.map{height:300px}.footer-grid{grid-template-columns:1fr;gap:22px}.footer-grid p{margin-bottom:0}.chatbot{right:12px;bottom:86px;max-width:calc(100vw - 24px);max-height:calc(100dvh - 110px)}.chatbot-toggle{right:16px;bottom:16px;width:58px;height:58px;font-size:27px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
 
+
+/* =========================================
+   FAQ - DISEÑO RESPONSIVE
+========================================= */
+
+#faq {
+    padding:80px 0;
+    background:#fcf9f8;
+    overflow:hidden;
+}
+
+#faq .faq-grid {
+    display:grid;
+    grid-template-columns:minmax(0, 42%) minmax(0, 1fr);
+    gap:55px;
+    align-items:start;
+}
+
+#faq .faq-left,
+#faq .faq-right {
+    min-width:0;
+}
+
+#faq .faq-left .section-title {
+    color:#bf7884;
+    font-size:clamp(30px, 3.5vw, 46px);
+    line-height:1.15;
+    margin-bottom:22px;
+}
+
+#faq .faq-text {
+    max-width:100%;
+    line-height:1.8;
+    margin-bottom:25px;
+}
+
+/* IMAGEN FAQ */
+
+#faq .faq-illustration {
+    position:relative;
+    width:100%;
+    height:auto;
+    min-height:0;
+    margin-top:25px;
+    display:block;
+}
+
+#faq .faq-illustration img {
+    display:block;
+    position:relative;
+    width:100%;
+    max-width:none;
+    height:auto;
+    object-fit:contain;
+    border-radius:14px;
+    box-shadow:0 12px 30px rgba(0,0,0,.07);
+}
+
+/* Eliminar decoraciones anteriores */
+
+#faq .faq-circle,
+#faq .faq-dot {
+    display:none;
+}
+
+/* TABLET */
+
+@media (max-width:1024px) {
+
+    #faq .faq-grid {
+        grid-template-columns:1fr;
+        gap:35px;
+    }
+
+    #faq .faq-illustration {
+        max-width:720px;
+    }
+}
+
+/* CELULARES */
+
+@media (max-width:768px) {
+
+    #faq {
+        padding:45px 0;
+    }
+
+    #faq .container {
+        width:90%;
+        max-width:100%;
+    }
+
+    #faq .faq-grid {
+        display:flex;
+        flex-direction:column;
+        gap:30px;
+    }
+
+    #faq .faq-left,
+    #faq .faq-right {
+        width:100%;
+    }
+
+    #faq .faq-left .section-title {
+        font-size:30px;
+        line-height:1.2;
+        text-align:left;
+    }
+
+    #faq .faq-text {
+        font-size:15px;
+        text-align:left;
+    }
+
+    #faq .faq-illustration {
+        width:100%;
+        margin:25px 0 0;
+        padding:0;
+    }
+
+    #faq .faq-illustration img {
+        width:100%;
+        max-width:100%;
+        height:auto;
+        border-radius:12px;
+    }
+
+    #faq .faq-question {
+        font-size:15px;
+        line-height:1.5;
+        padding:20px 5px;
+    }
+
+    #faq .faq-answer {
+        font-size:14px;
+        line-height:1.8;
+    }
+}
