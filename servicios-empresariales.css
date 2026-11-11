@@ -24,3 +24,10 @@
 @media(max-width:900px){.business-hero{padding:58px 0}.business-hero-grid{grid-template-columns:minmax(0,1fr) minmax(0,.85fr);gap:28px}.business-hero h1{font-size:clamp(34px,4.5vw,48px)}.business-hero .hero-actions{flex-direction:column;align-items:stretch}.business-hero .hero-actions a{width:100%}.business-about-grid{gap:35px}.business-contact-grid{gap:35px}}
 @media(max-width:650px){.business-hero{padding:42px 0 48px}.business-hero-grid{grid-template-columns:1fr;gap:34px}.business-hero h1{font-size:clamp(35px,9vw,44px)}.business-lead{font-size:15px}.business-hero-panel{min-height:285px;padding:32px}.panel-mark{font-size:90px}.business-strip-inner{display:grid;grid-template-columns:1fr 1fr;gap:17px 10px;padding:20px 0}.business-strip-inner span{font-size:9px;line-height:1.5}.business-about-grid{grid-template-columns:1fr;gap:8px}.business-about-copy{padding-top:0}.business-cards{grid-template-columns:1fr;gap:12px}.business-card{min-height:0;padding:25px}.model-grid{grid-template-columns:1fr;gap:12px}.model-card{min-height:0;padding:24px}.model-card h3{margin-top:16px}.coverage-inner{display:block}.coverage-regions{margin-top:25px;gap:11px;font-size:12px}.business-promise{padding:62px 0}.business-promise p{font-size:14px}.business-contact-grid{grid-template-columns:1fr}.business-contact-aside{min-height:260px;padding:30px}.business-contact-aside .aside-monogram{font-size:90px}}
 @media(prefers-reduced-motion:reduce){.business-card{transition:none}}
+
+/* Sección de clientes */
+.business-clients{background:#fff;padding-top:72px;padding-bottom:72px}
+.client-logo-panel{min-height:150px;display:flex;align-items:center;justify-content:center;gap:18px;padding:30px;border:1px solid var(--border);background:#fff}
+.client-logo-panel img{display:block;width:min(100%,330px);height:auto;max-height:90px;object-fit:contain}
+.client-logo-panel span{position:absolute;left:-9999px}
+@media(max-width:650px){.business-clients{padding-top:52px;padding-bottom:52px}.client-logo-panel{min-height:120px;padding:22px}.client-logo-panel img{width:min(100%,270px)}}
