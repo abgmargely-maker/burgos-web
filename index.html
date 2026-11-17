@@ -13,71 +13,29 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-<link rel="stylesheet" href="style.css">
-<style>
-.hero-image-section {
-  width: 100%;
-  background: #f7f3f1;
-  overflow: hidden;
-}
-.hero-image-wrap {
-  width: 100%;
-  max-width: 1800px;
-  margin: 0 auto;
-  position: relative;
-  line-height: 0;
-}
-.hero-image-wrap > img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-.hero-image-cta {
-  position: absolute;
-  left: 5.6%;
-  top: 72.2%;
-  width: 19.8%;
-  height: 8.2%;
-  border-radius: 999px;
-  z-index: 2;
-  cursor: pointer;
-}
-.hero-image-cta:focus-visible {
-  outline: 3px solid #8d9274;
-  outline-offset: 4px;
-}
-@media (max-width: 600px) {
-  .hero-image-cta {
-    left: 5.5%;
-    top: 72.2%;
-    width: 20%;
-    height: 8.2%;
-  }
-}
-</style>
-
-</head><body>
+<link rel="stylesheet" href="style.css"></head><body>
 <header class="site-header"><div class="container navbar">
 <a class="logo" href="#inicio" aria-label="Burgos Abogados, inicio"><img src="assets/logo-burgos.png" alt="Burgos Abogados"></a>
 <nav aria-label="Navegación principal"><a href="#inicio">Inicio</a><a href="#confianza">Nosotros</a><a href="#areas">Servicios</a><a href="#faq">Preguntas frecuentes</a><a href="#contacto">Contacto</a><a href="servicios-empresariales.html">Servicios empresariales</a></nav>
-<div class="header-actions"><a class="btn-top" href="https://wa.me/529996082755" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a></div>
+<div class="header-actions"><a class="btn-enterprise-top" href="servicios-empresariales.html"><i class="fa-solid fa-building"></i><span>Servicios empresariales</span></a>
+<a class="btn-top" href="https://wa.me/529996082755" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a></div>
 </div></header>
 <main>
-<section class="hero-image-section" id="inicio" aria-label="Burgos Abogados">
-  <div class="hero-image-wrap">
-    <img
-      src="assets/hero-principal-burgos.png"
-      alt="Burgos Abogados. Crecemos contigo con estrategia y respaldo legal. Protegemos tu familia, patrimonio y proyectos."
-      fetchpriority="high"
-    >
-    <a
-      class="hero-image-cta"
-      href="https://wa.me/529996082755?text=Hola%2C%20deseo%20solicitar%20una%20asesor%C3%ADa%20jur%C3%ADdica."
-      target="_blank"
-      rel="noopener"
-      aria-label="Solicitar asesoría por WhatsApp"
-      title="Solicitar asesoría por WhatsApp"
-    ></a>
+<section class="hero-banner" id="inicio" aria-label="Burgos Abogados">
+  <img class="hero-banner-image" src="assets/hero-principal-burgos.png"
+       alt="Burgos Abogados: crecemos contigo con estrategia y respaldo legal"
+       fetchpriority="high">
+  <div class="hero-banner-actions" aria-label="Accesos principales">
+    <a class="hero-banner-button hero-banner-whatsapp"
+       href="https://wa.me/529996082755?text=Hola%2C%20deseo%20solicitar%20una%20asesor%C3%ADa%20jur%C3%ADdica."
+       target="_blank" rel="noopener">
+      <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+      <span>Solicitar asesoría</span>
+    </a>
+    <a class="hero-banner-button hero-banner-enterprise" href="servicios-empresariales.html">
+      <i class="fa-solid fa-building" aria-hidden="true"></i>
+      <span>Servicios empresariales</span>
+    </a>
   </div>
 </section>
 <div class="value-strip"><div class="container value-inner"><span>ATENCIÓN PERSONALIZADA</span><span>TRANSPARENCIA</span><span>CONFIDENCIALIDAD</span><span>VISIÓN ESTRATÉGICA</span></div></div>
@@ -89,14 +47,14 @@
 </div></section>
 <section id="areas" class="section services"><div class="container"><div class="section-head"><div><span class="eyebrow">ÁREAS DE PRÁCTICA</span><h2>Soluciones jurídicas para cada etapa.</h2></div><p>Una perspectiva integral para acompañar a personas, familias y empresas.</p></div>
 <div class="cards">
-<article class="service-card"><span class="number">01</span><i class="fa-solid fa-users"></i><h3>Divorcios</h3><p>Asesoría en procedimientos voluntarios, incausados y convenios.</p><button data-service="Divorcios">Consultar servicio <i class="fa-solid fa-arrow-right"></i></button></article>
-<article class="service-card"><span class="number">02</span><i class="fa-solid fa-hand-holding-dollar"></i><h3>Pensión alimenticia</h3><p>Determinación, modificación y ejecución de obligaciones alimentarias.</p><button data-service="Pensión alimenticia">Consultar servicio <i class="fa-solid fa-arrow-right"></i></button></article>
-<article class="service-card"><span class="number">03</span><i class="fa-solid fa-people-roof"></i><h3>Derecho familiar</h3><p>Custodia, convivencia, patria potestad y procedimientos familiares.</p><button data-service="Procedimientos familiares">Consultar servicio <i class="fa-solid fa-arrow-right"></i></button></article>
-<article class="service-card"><span class="number">04</span><i class="fa-solid fa-scale-balanced"></i><h3>Derecho civil</h3><p>Contratos, controversias civiles y protección patrimonial.</p><button data-service="Derecho civil">Consultar servicio <i class="fa-solid fa-arrow-right"></i></button></article>
-<article class="service-card"><span class="number">05</span><i class="fa-solid fa-briefcase"></i><h3>Derecho mercantil</h3><p>Cobranza, títulos de crédito y representación en controversias.</p><button data-service="Derecho mercantil">Consultar servicio <i class="fa-solid fa-arrow-right"></i></button></article>
-<article class="service-card"><span class="number">06</span><i class="fa-solid fa-file-shield"></i><h3>Amparo</h3><p>Estudio y defensa constitucional frente a actos de autoridad.</p><button data-service="Amparo">Consultar servicio <i class="fa-solid fa-arrow-right"></i></button></article>
-<article class="service-card"><span class="number">07</span><i class="fa-solid fa-stamp"></i><h3>Gestión notarial</h3><p>Asesoría y acompañamiento en trámites ante notarías.</p><button data-service="Gestión notarial">Consultar servicio <i class="fa-solid fa-arrow-right"></i></button></article>
-<article class="service-card"><span class="number">08</span><i class="fa-solid fa-house"></i><h3>Operaciones patrimoniales</h3><p>Donaciones, compraventas, convenios y revisión documental.</p><button data-service="Operaciones patrimoniales">Consultar servicio <i class="fa-solid fa-arrow-right"></i></button></article>
+<article class="service-card"><span class="number"></span><i class="fa-solid fa-users"></i><h3>Divorcios</h3><p>Asesoría en procedimientos voluntarios, incausados y convenios.</p><button data-service="Divorcios">Consultar servicio <i class="fa-solid fa-arrow-right"></i></button></article>
+<article class="service-card"><span class="number"></span><i class="fa-solid fa-hand-holding-dollar"></i><h3>Pensión alimenticia</h3><p>Determinación, modificación y ejecución de obligaciones alimentarias.</p><button data-service="Pensión alimenticia">Consultar servicio <i class="fa-solid fa-arrow-right"></i></button></article>
+<article class="service-card"><span class="number"></span><i class="fa-solid fa-people-roof"></i><h3>Derecho familiar</h3><p>Custodia, convivencia, patria potestad y procedimientos familiares.</p><button data-service="Procedimientos familiares">Consultar servicio <i class="fa-solid fa-arrow-right"></i></button></article>
+<article class="service-card"><span class="number"></span><i class="fa-solid fa-scale-balanced"></i><h3>Derecho civil</h3><p>Contratos, controversias civiles y protección patrimonial.</p><button data-service="Derecho civil">Consultar servicio <i class="fa-solid fa-arrow-right"></i></button></article>
+<article class="service-card"><span class="number"></span><i class="fa-solid fa-briefcase"></i><h3>Derecho mercantil</h3><p>Cobranza, títulos de crédito y representación en controversias.</p><button data-service="Derecho mercantil">Consultar servicio <i class="fa-solid fa-arrow-right"></i></button></article>
+<article class="service-card"><span class="number"></span><i class="fa-solid fa-file-shield"></i><h3>Amparo</h3><p>Estudio y defensa constitucional frente a actos de autoridad.</p><button data-service="Amparo">Consultar servicio <i class="fa-solid fa-arrow-right"></i></button></article>
+<article class="service-card"><span class="number"></span><i class="fa-solid fa-stamp"></i><h3>Gestión notarial</h3><p>Asesoría y acompañamiento en trámites ante notarías.</p><button data-service="Gestión notarial">Consultar servicio <i class="fa-solid fa-arrow-right"></i></button></article>
+<article class="service-card"><span class="number"></span><i class="fa-solid fa-house"></i><h3>Operaciones patrimoniales</h3><p>Donaciones, compraventas, convenios y revisión documental.</p><button data-service="Operaciones patrimoniales">Consultar servicio <i class="fa-solid fa-arrow-right"></i></button></article>
 </div></div></section>
 <section class="statement"><div class="container"><span class="eyebrow">NUESTRO COMPROMISO</span><h2>Decisiones importantes merecen una estrategia legal a su altura.</h2><a class="btn-primary" href="#contacto">Contactar al despacho <i class="fa-solid fa-arrow-right"></i></a></div></section>
 <section id="faq" class="section faq"><div class="container faq-grid"><div class="faq-intro"><span class="eyebrow">PREGUNTAS FRECUENTES</span><h2>Información clara desde el primer contacto.</h2><p>Resolvemos algunas dudas comunes antes de iniciar tu asesoría.</p><img src="assets/faq-burgos.png" alt="Detalle institucional Burgos Abogados" loading="lazy"></div><div class="faq-list">
