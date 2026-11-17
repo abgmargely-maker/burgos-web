@@ -271,3 +271,16 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid rgb
   .hero-image-actions{padding-inline:12px;gap:7px;}
   .hero-image-actions .btn-primary,.hero-image-actions .btn-secondary{font-size:9px;padding-inline:5px;}
 }
+
+
+/* Los botones ya están dibujados dentro de la imagen del hero.
+   Estos enlaces transparentes conservan su funcionamiento sin duplicarlos. */
+.hero-image-wrap{position:relative;}
+.hero-image-hotspots{position:absolute;inset:0;pointer-events:none;}
+.hero-hotspot{position:absolute;display:block;pointer-events:auto;z-index:5;border-radius:999px;background:transparent;outline-offset:3px;}
+/* Coordenadas relativas a la imagen completa: primer botón y segundo botón. */
+.hero-hotspot-whatsapp{left:4.1%;top:66.5%;width:18.7%;height:12.5%;}
+.hero-hotspot-business{left:23.4%;top:66.5%;width:22%;height:12.5%;}
+.hero-hotspot:focus-visible{outline:2px solid #767b60;}
+/* Elimina cualquier botón HTML antiguo del hero, si queda en caché de estilos. */
+.hero-image-actions{display:none!important;}
