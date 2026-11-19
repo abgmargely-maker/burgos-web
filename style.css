@@ -270,40 +270,4 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid rgb
   .btn-top,.btn-business-mobile{min-height:35px;padding:7px 6px;font-size:8px;gap:4px;}
   .hero-image-actions{padding-inline:12px;gap:7px;}
   .hero-image-actions .btn-primary,.hero-image-actions .btn-secondary{font-size:9px;padding-inline:5px;}
-
- .business-clients {
-  padding: 75px 0;
-  background: #fbf8f7;
-  text-align: center;
-}
-
-.business-clients h2 {
-  color: #bf7884;
-  margin-bottom: 18px;
-}
-
-.business-clients p {
-  color: #62645f;
-  margin-bottom: 35px;
-}
-
-.business-client-mark {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #fff;
-  border: 1px solid #eadfdb;
-  padding: 30px;
-  max-width: 340px;
-  min-height: 150px;
-  margin: auto;
-  box-shadow: 0 8px 25px rgba(0,0,0,.05);
-}
-
-.business-client-mark img {
-  width: 100%;
-  max-width: 240px;
-  height: 90px;
-  object-fit: contain;
-}
 }
