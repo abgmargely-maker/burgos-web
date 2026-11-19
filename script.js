@@ -55,3 +55,9 @@
     button.addEventListener("click", () => choose(button.dataset.service));
   });
 })();
+
+
+  document.querySelectorAll("[data-service]").forEach(button => {
+    button.addEventListener("click", () => choose(button.dataset.service));
+  });
+})();
