@@ -39,3 +39,4 @@
     button.addEventListener('click', () => choose(button.dataset.service));
   });
 })();
+
