@@ -1,0 +1,85 @@
+/* CSS completo de la página de Servicios Empresariales Burgos Abogados */
+/* Rediseño exclusivo de servicios empresariales. El hero original se conserva sin cambios. */
+.business-page{--bp-rose:#bf7884;--bp-green:#8d9274;--bp-dark:#767b60;--bp-cream:#f7f3f1;--bp-border:#eadfdb}
+.business-page .business-hero{padding:76px 0;background:linear-gradient(120deg,#fcfaf9,#f3ebe8)}
+.business-page .business-hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:55px;align-items:center}
+.business-page .business-hero h1{font-size:clamp(38px,4.6vw,62px);line-height:1.12;letter-spacing:-.05em}
+.business-page .business-hero p{color:var(--muted);font-size:17px}
+.business-page .business-hero img{width:100%;height:auto;object-fit:contain;border-radius:4px;box-shadow:18px 18px 0 #bf788420}
+/* Intro */
+.business-intro-band{position:relative;overflow:hidden;background:#fff;padding:82px 0 88px}
+.business-intro-band:after{content:"";position:absolute;width:330px;height:330px;border:1px solid #eadfdb;border-radius:50%;right:-120px;top:-155px;box-shadow:0 0 0 35px #f7f3f155,0 0 0 70px #f7f3f133;pointer-events:none}
+.business-intro-layout{position:relative;z-index:1;display:grid;grid-template-columns:.85fr 1.15fr;gap:75px;align-items:center}
+.business-intro-title h2{font-size:clamp(34px,4vw,51px);margin:0;max-width:480px}
+.business-intro-copy{border-left:3px solid var(--rose);padding:8px 0 8px 28px}
+.business-intro-copy p{font-size:16px;color:var(--muted);margin:0}
+.business-pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:42px}
+.business-pillar{background:var(--cream);padding:21px 22px;border:1px solid #efe6e2;display:flex;align-items:center;gap:13px}
+.business-pillar i{font-size:22px;color:var(--rose)}
+.business-pillar span{font:700 12px Montserrat,sans-serif;letter-spacing:.04em;color:var(--green-dark)}
+/* Areas */
+.business-areas{position:relative;background:var(--cream);padding:94px 0 100px}
+.business-areas:before{content:"";position:absolute;left:0;top:0;width:100%;height:5px;background:linear-gradient(90deg,var(--rose) 0 34%,var(--green) 34% 100%)}
+.business-areas .section-head{align-items:end}
+.business-areas .section-head>p{font-size:15px}
+.business-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:19px}
+.business-card{position:relative;overflow:hidden;display:flex;flex-direction:column;min-height:330px;background:#fff;border:1px solid var(--bp-border);padding:29px 27px 25px;box-shadow:0 7px 24px #34251c08;transition:transform .25s,box-shadow .25s}
+.business-card:after{content:"";position:absolute;right:-42px;bottom:-60px;width:145px;height:145px;border:1px solid #eadfdb;border-radius:50%;pointer-events:none}
+.business-card:hover{transform:translateY(-6px);box-shadow:0 18px 36px #34251c12}
+.business-card-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:22px}
+.business-card-icon{width:52px;height:52px;display:grid;place-items:center;background:#f8eff0;border-radius:50%;color:var(--rose);font-size:21px}
+.business-card-number{font:700 12px Montserrat,sans-serif;letter-spacing:.14em;color:#b7b4ae}
+.business-card h3{font-size:18px;line-height:1.35;color:var(--green-dark);margin-bottom:14px}
+.business-card ul{padding-left:18px;margin:0 0 24px;color:var(--muted);font-size:13px;line-height:1.85}
+.business-card li{padding-left:2px;margin:2px 0}
+.business-card .card-contact{position:relative;z-index:1;margin-top:auto;display:inline-flex;align-items:center;gap:8px;color:var(--rose-dark);font-size:12px;font-weight:700}
+.business-card .card-contact i{font-size:11px;transition:transform .2s}
+.business-card .card-contact:hover i{transform:translateX(4px)}
+/* Approach */
+.business-approach{padding:94px 0;background:#fff}
+.business-approach-panel{display:grid;grid-template-columns:1fr 1.05fr;gap:60px;align-items:center;background:linear-gradient(125deg,#f8f4f1,#fff);border:1px solid var(--bp-border);padding:clamp(30px,5vw,62px);position:relative;overflow:hidden}
+.business-approach-panel:after{content:"";position:absolute;right:-90px;bottom:-150px;width:300px;height:300px;border-radius:50%;background:#8d927410}
+.business-approach-copy,.business-steps{position:relative;z-index:1}
+.business-approach-copy h2{max-width:480px}
+.business-approach-copy p{color:var(--muted);font-size:15px;max-width:450px}
+.business-steps{display:grid;gap:13px}
+.business-step{display:grid;grid-template-columns:48px 1fr;gap:15px;align-items:center;background:#fff;border:1px solid var(--bp-border);padding:17px 19px}
+.business-step .step-no{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:var(--green);color:#fff;font:700 13px Montserrat,sans-serif}
+.business-step h3{font-size:14px;color:var(--green-dark);margin:0 0 4px}
+.business-step p{font-size:12px;line-height:1.6;color:var(--muted);margin:0}
+/* Contract modes */
+.business-modes{background:#f8f5f3;padding:88px 0}
+.business-modes-head{text-align:center;max-width:720px;margin:0 auto 42px}
+.business-modes-head h2{margin-bottom:13px}
+.business-modes-head p{color:var(--muted);margin:0}
+.business-mode-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.business-mode{background:#fff;border:1px solid var(--bp-border);padding:26px 20px;min-height:170px}
+.business-mode i{font-size:23px;color:var(--rose);margin-bottom:19px}
+.business-mode h3{font-size:14px;line-height:1.45;color:var(--green-dark);margin:0}
+/* Coverage */
+.business-coverage{padding:82px 0;background:#fff}
+.business-coverage-inner{display:flex;align-items:center;justify-content:space-between;gap:45px;border-bottom:1px solid var(--bp-border);padding-bottom:46px}
+.business-coverage h2{margin:0;max-width:440px}
+.business-regions{display:flex;flex-wrap:wrap;gap:10px;justify-content:flex-end}
+.business-region{display:inline-flex;align-items:center;gap:9px;padding:13px 17px;border:1px solid var(--bp-border);background:var(--cream);font:700 11px Montserrat,sans-serif;letter-spacing:.08em;color:var(--green-dark)}
+.business-region i{color:var(--rose)}
+.business-coverage-note{max-width:790px;margin:28px 0 0 auto;color:var(--muted);font-size:14px;text-align:right}
+/* Clients */
+.business-clients{padding:68px 0 76px;background:#fbf8f7;text-align:center}
+.business-clients .eyebrow{margin-bottom:12px}
+.business-clients h2{font-size:clamp(26px,3vw,36px);margin-bottom:27px}
+.business-client-mark{display:flex;align-items:center;justify-content:center;width:min(100%,360px);min-height:125px;margin:0 auto;padding:22px 30px;background:#fff;border:1px solid var(--bp-border);box-shadow:0 8px 25px #33221c08;border-radius:3px}.business-client-mark img{display:block;width:min(100%,260px);height:auto;max-height:110px;object-fit:contain}
+.business-client-mark img{display:block;width:min(100%,260px);height:auto;max-height:110px;object-fit:contain;}
+/* CTA */
+.business-page .statement{position:relative;overflow:hidden;padding:84px 0;background:linear-gradient(115deg,#777d61,#8d9274);color:#fff;text-align:center}
+.business-page .statement:before,.business-page .statement:after{content:"";position:absolute;width:250px;height:250px;border:1px solid #ffffff28;border-radius:50%;pointer-events:none}
+.business-page .statement:before{left:-100px;top:-135px;box-shadow:0 0 0 28px #ffffff0c,0 0 0 56px #ffffff09}
+.business-page .statement:after{right:-100px;bottom:-165px;box-shadow:0 0 0 28px #ffffff0c,0 0 0 56px #ffffff09}
+.business-page .statement .container{position:relative;z-index:1}
+.business-page .statement h2{max-width:800px;margin:0 auto 28px}
+.business-page .statement .btn-primary{background:var(--rose);border-radius:999px;padding-inline:27px}
+.business-page .statement .btn-primary:hover{background:var(--rose-dark)}
+.business-page footer{margin-top:0}
+@media(max-width:900px){.business-intro-layout{gap:35px}.business-cards{grid-template-columns:repeat(2,minmax(0,1fr))}.business-mode-grid{grid-template-columns:repeat(2,1fr)}.business-approach-panel{gap:30px}.business-coverage-inner{align-items:flex-start;flex-direction:column}.business-regions{justify-content:flex-start}.business-coverage-note{text-align:left;margin-left:0}}
+@media(max-width:650px){.business-page .business-hero{padding:42px 0}.business-page .business-hero-grid{grid-template-columns:1fr;gap:28px}.business-page .business-hero h1{font-size:clamp(34px,9vw,43px)}.business-page .business-hero img{max-width:100%}.business-intro-band,.business-areas,.business-approach,.business-modes,.business-coverage{padding:58px 0}.business-intro-layout{grid-template-columns:1fr;gap:22px}.business-intro-copy{padding-left:18px}.business-pillars{grid-template-columns:1fr;gap:9px;margin-top:26px}.business-pillar{padding:16px}.business-areas .section-head{display:block}.business-cards{grid-template-columns:1fr;gap:12px}.business-card{min-height:0;padding:24px}.business-card ul{margin-bottom:20px}.business-approach-panel{grid-template-columns:1fr;gap:27px;padding:25px 19px}.business-mode-grid{grid-template-columns:1fr 1fr;gap:9px}.business-mode{min-height:145px;padding:20px 15px}.business-coverage-inner{gap:22px;padding-bottom:30px}.business-regions{display:grid;grid-template-columns:1fr;gap:8px;width:100%}.business-region{justify-content:flex-start}.business-coverage-note{font-size:13px}.business-clients{padding:52px 0}.business-page .statement{padding:62px 0}}
+@media(max-width:370px){.business-mode-grid{grid-template-columns:1fr}.business-step{grid-template-columns:42px 1fr;padding:14px}.business-step .step-no{width:38px;height:38px}}
