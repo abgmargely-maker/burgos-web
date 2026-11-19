@@ -12,3 +12,27 @@
 @media(max-width:850px){.navbar{min-height:74px;gap:12px}.navbar nav{gap:10px}.navbar nav a{font-size:10px}.logo img{width:125px}.btn-top{padding:11px 13px;font-size:11px}.hero{min-height:570px}.hero-shade{background:linear-gradient(90deg,rgba(250,247,243,.96),rgba(250,247,243,.83) 55%,rgba(250,247,243,.22))}.hero h1{font-size:clamp(38px,6vw,58px)}.section{padding:72px 0}.value-inner{justify-content:center;padding:18px 0;gap:12px 24px}.contact-grid{gap:30px}}
 @media(max-width:650px){html{scroll-padding-top:72px}.container{width:calc(100% - 36px)}.navbar{min-height:70px;justify-content:space-between}.navbar nav{display:none}.logo img{width:130px;max-height:52px}.hero{min-height:660px;align-items:flex-end}.hero-image{object-position:62% center}.hero-shade{background:linear-gradient(0deg,rgba(250,247,243,.98) 0%,rgba(250,247,243,.92) 48%,rgba(250,247,243,.18) 100%)}.hero-content{padding-top:300px;padding-bottom:35px}.hero h1{font-size:clamp(36px,10vw,48px)}.hero p{font-size:15px}.hero-actions{display:grid;grid-template-columns:1fr;gap:9px;margin-top:22px}.hero-button{min-height:49px;width:100%;font-size:13px}.hero-note{font-size:9px;margin-top:23px}.section{padding:58px 0}.value-inner{display:grid;grid-template-columns:1fr 1fr;text-align:center;gap:16px 8px}.value-inner span{font-size:9px}.confianza-grid{grid-template-columns:1fr;gap:28px}.confianza-art{height:270px;box-shadow:9px 9px 0 var(--cream)}.section-head{display:block;margin-bottom:30px}.section-head>p{margin-top:18px}.cards{grid-template-columns:1fr;gap:12px}.service-card{min-height:230px;padding:25px}.statement{padding:58px 0}.faq-grid,.contact-grid{grid-template-columns:1fr;gap:32px}.faq-art{height:150px}.map{height:300px}.footer-grid{grid-template-columns:1fr;gap:22px}.chatbot{right:12px;bottom:86px;max-width:calc(100vw - 24px);max-height:calc(100dvh - 110px)}.chatbot-toggle{right:16px;bottom:16px;width:58px;height:58px;font-size:27px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
+
+
+/* ===== HERO PRINCIPAL CORREGIDO: imagen completa + zonas de clic invisibles ===== */
+.hero-banner{
+  position:relative; display:block; width:100%; max-width:none;
+  margin:0 auto; padding:0; overflow:hidden;
+  background:#f7f3f1; line-height:0;
+}
+.hero-banner-image{
+  display:block; width:100%; height:auto; max-width:none; object-fit:contain;
+}
+.hero-hotspot{
+  position:absolute; display:block; z-index:5; background:transparent;
+  border:0; border-radius:999px; line-height:normal; cursor:pointer;
+  -webkit-tap-highlight-color:transparent;
+}
+.hero-hotspot:focus-visible{outline:3px solid #8d9274;outline-offset:3px}
+.hero-hotspot-whatsapp{left:6.0%;top:88.3%;width:19.7%;height:9.5%}
+.hero-hotspot-enterprise{left:25.4%;top:88.3%;width:22.4%;height:9.5%}
+@media(max-width:700px){
+  .hero-banner-image{width:100%;height:auto}
+  .hero-hotspot-whatsapp{left:6.0%;top:88.3%;width:19.7%;height:9.5%}
+  .hero-hotspot-enterprise{left:25.4%;top:88.3%;width:22.4%;height:9.5%}
+}
