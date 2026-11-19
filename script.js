@@ -5,9 +5,10 @@
   const close = document.getElementById("closeChat");
   const response = document.getElementById("chatResponse");
   const options = [...document.querySelectorAll(".chat-option")];
-  if (!chat || !toggle || !close || !response) return;
+  const hasChatUI = Boolean(chat && toggle && close && response);
 
   function showChat(open) {
+    if (!hasChatUI) return;
     chat.classList.toggle("show", open);
     chat.setAttribute("aria-hidden", String(!open));
     toggle.setAttribute("aria-expanded", String(open));
@@ -15,13 +16,16 @@
     else toggle.focus();
   }
 
-  toggle.addEventListener("click", () => showChat(!chat.classList.contains("show")));
-  close.addEventListener("click", () => showChat(false));
-  document.addEventListener("keydown", event => {
-    if (event.key === "Escape" && chat.classList.contains("show")) showChat(false);
-  });
+  if (hasChatUI) {
+    toggle.addEventListener("click", () => showChat(!chat.classList.contains("show")));
+    close.addEventListener("click", () => showChat(false));
+    document.addEventListener("keydown", event => {
+      if (event.key === "Escape" && chat.classList.contains("show")) showChat(false);
+    });
+  }
 
   function choose(service) {
+    if (!hasChatUI) return;
     showChat(true);
     options.forEach(button => {
       button.classList.toggle("active-option", button.dataset.service === service);
@@ -30,7 +34,7 @@
 
     const message = document.createElement("div");
     message.className = "bot-message";
-    message.textContent = `Gracias por tu interés en ${service}. Podemos orientarte de forma personalizada. Continúa por WhatsApp para compartirnos brevemente tu situación.`;
+    message.textContent = `Gracias por tu interés en ${service}. Podemos orientarte de forma personalizada en Yucatán, Campeche y Quintana Roo. Continúa por WhatsApp para compartirnos brevemente tu situación.`;
 
     const link = document.createElement("a");
     link.className = "chat-wa-btn";
