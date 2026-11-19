@@ -29,25 +29,58 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "LegalService",
-    "name": "Burgos Abogados - Servicios Jurídicos Empresariales",
-    "url": "https://www.burgossc.com/servicios-empresariales.html",
-    "logo": "https://www.burgossc.com/assets/logo-burgos.png",
-    "image": "https://www.burgossc.com/assets/preview-burgos.jpg",
-    "telephone": "+52 999 608 2755",
-    "email": "abogados@burgossc.com",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Calle 33 número 479, Polígono 108",
-      "addressLocality": "Mérida",
-      "addressRegion": "Yucatán",
-      "addressCountry": "MX"
-    },
-    "areaServed": [
-      { "@type": "City", "name": "Mérida" },
-      { "@type": "AdministrativeArea", "name": "Yucatán" },
-      { "@type": "AdministrativeArea", "name": "Campeche" },
-      { "@type": "AdministrativeArea", "name": "Quintana Roo" }
+    "@graph": [
+      {
+        "@type": "LegalService",
+        "name": "Burgos Abogados - Servicios Jurídicos Empresariales",
+        "url": "https://www.burgossc.com/servicios-empresariales.html",
+        "logo": "https://www.burgossc.com/assets/logo-burgos.png",
+        "image": "https://www.burgossc.com/assets/preview-burgos.jpg",
+        "telephone": "+52 999 608 2755",
+        "email": "abogados@burgossc.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Calle 33 número 479, Polígono 108",
+          "addressLocality": "Mérida",
+          "addressRegion": "Yucatán",
+          "addressCountry": "MX"
+        },
+        "areaServed": [
+          { "@type": "City", "name": "Mérida" },
+          { "@type": "AdministrativeArea", "name": "Yucatán" },
+          { "@type": "AdministrativeArea", "name": "Campeche" },
+          { "@type": "AdministrativeArea", "name": "Quintana Roo" }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Cómo operan en Yucatán, Campeche y Quintana Roo?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Contamos con base en Mérida, Yucatán, y brindamos asesoría, seguimiento y representación jurídica a empresas, establecimientos comerciales y sucursales en Yucatán, Campeche y Quintana Roo."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Atienden incidentes en sucursales, faltantes o denuncias ante Fiscalías?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. Apoyamos en la integración de expedientes, elaboración de actas administrativas, presentación de denuncias o querellas, seguimiento de carpetas de investigación y representación ante Fiscalías."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Es posible contratar iguala jurídica o atención por asunto?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. Ofrecemos atención por asunto, iguala jurídica empresarial, cobertura multisucursal y consultoría o proyectos especiales según el alcance y las necesidades de cada organización."
+            }
+          }
+        ]
+      }
     ]
   }
   </script>
@@ -64,7 +97,7 @@
     <nav class="desktop-nav" aria-label="Navegación principal">
       <a href="index.html">Inicio</a>
       <a class="active" href="servicios-empresariales.html">Servicios empresariales</a>
-      <a href="index.html#contacto">Contacto</a>
+      <a href="#contacto-empresarial">Contacto</a>
     </nav>
     <div class="header-actions">
       <a class="btn-business-mobile" href="index.html">Inicio</a>
@@ -270,20 +303,21 @@
       <div class="business-faq-list">
         <details open>
           <summary>¿Cómo operan en Yucatán, Campeche y Quintana Roo?</summary>
-          <p>Contamos con base en Mérida, Yucatán, y brindamos asesoría, seguimiento y representación jurídica a empresas y sucursales en Yucatán, Campeche y Quintana Roo.</p>
+          <p>Contamos con base en Mérida, Yucatán, y brindamos asesoría, seguimiento y representación jurídica a empresas, establecimientos comerciales y sucursales en Yucatán, Campeche y Quintana Roo.</p>
         </details>
         <details>
           <summary>¿Atienden incidentes en sucursales, faltantes o denuncias ante Fiscalías?</summary>
-          <p>Sí. Apoyamos en la integración de expedientes, elaboración de actas administrativas, presentación de denuncias o querellas y seguimiento de carpetas de investigación.</p>
+          <p>Sí. Apoyamos en la integración de expedientes, elaboración de actas administrativas, presentación de denuncias o querellas, seguimiento de carpetas de investigación y representación ante Fiscalías.</p>
         </details>
         <details>
           <summary>¿Es posible contratar iguala jurídica o atención por asunto?</summary>
-          <p>Sí. Adaptamos el esquema de colaboración según el tamaño de la empresa, número de sucursales y frecuencia de contingencias legales.</p>
+          <p>Sí. Ofrecemos atención por asunto, iguala jurídica empresarial, cobertura multisucursal y consultoría o proyectos especiales según el alcance y las necesidades de cada organización.</p>
         </details>
       </div>
     </div>
   </section>
-<section class="business-contact" id="contacto-empresarial">
+
+  <section class="business-contact" id="contacto-empresarial">
     <div class="container">
       <div class="business-contact-card">
         <div class="business-contact-copy">
@@ -320,6 +354,7 @@
       </div>
     </div>
   </section>
+
   <section class="statement">
     <div class="container">
       <span class="eyebrow">BURGOS ABOGADOS</span>
@@ -345,7 +380,7 @@
       <a href="index.html">Página principal</a>
       <a href="#areas-empresariales">Áreas empresariales</a>
       <a href="#faq-empresarial">Preguntas frecuentes</a>
-      <a href="index.html#contacto">Contacto</a>
+      <a href="#contacto-empresarial">Contacto</a>
     </div>
     <div>
       <p class="footer-heading"><strong>Contacto</strong></p>
