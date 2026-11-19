@@ -43,7 +43,7 @@ h2 em{font-style:normal;color:var(--rose)}
 .trust-list div{display:flex;align-items:flex-start;gap:13px;font-size:14px;font-weight:600}
 .trust-list i{color:var(--green);padding-top:4px}
 .confianza-image{min-width:0;position:relative}
-.confianza-image img{width:100%;height:auto;aspect-ratio:1.15/1;object-fit:cover;border-radius:5px;box-shadow:18px 18px 0 var(--cream)}
+.confianza-image img{display:block;width:100%;height:auto;aspect-ratio:2/1;object-fit:contain;object-position:center;border-radius:5px;box-shadow:18px 18px 0 var(--cream);background:#f3ece5}
 .text-link{display:inline-flex;align-items:center;gap:10px;color:var(--rose-dark);font-size:14px;font-weight:700;border-bottom:1px solid var(--rose);padding-bottom:8px}
 .services{background:var(--cream)}
 .section-head{display:flex;align-items:end;justify-content:space-between;gap:45px;margin-bottom:44px}
@@ -59,8 +59,8 @@ h2 em{font-style:normal;color:var(--rose)}
 .service-card button{margin-top:auto;padding:0;border:0;background:none;color:var(--rose-dark);font-size:12px;font-weight:700;text-align:left}
 .service-card button i{margin-left:7px;transition:transform .2s}
 .service-card button:hover i{transform:translateX(4px)}
-.statement{padding:clamp(78px,9vw,112px) 0;background-color:var(--cream);background-image:linear-gradient(90deg,rgba(247,243,241,.86),rgba(247,243,241,.72)),url("assets/nuestro-compromiso-burgos.jpg");background-size:cover;background-position:center 52%;background-repeat:no-repeat;color:var(--ink);text-align:center}
-.statement-inner{max-width:900px}
+.statement{padding:clamp(78px,9vw,112px) 0;background-color:var(--cream);background-image:linear-gradient(90deg,rgba(250,247,243,.38),rgba(250,247,243,.30)),url("assets/nuestro-compromiso-burgos.jpg");background-size:cover;background-position:center 52%;background-repeat:no-repeat;color:var(--ink);text-align:center}
+.statement-inner{max-width:900px;padding:clamp(24px,4vw,42px);background:rgba(255,255,255,.46);border:1px solid rgba(255,255,255,.48);border-radius:8px;backdrop-filter:blur(2px);-webkit-backdrop-filter:blur(2px)}
 .statement .eyebrow{color:var(--green-dark)}
 .statement h2{max-width:790px;margin:0 auto 18px}
 .statement p{color:#454640;margin:0 auto 28px;max-width:650px}
@@ -69,7 +69,7 @@ h2 em{font-style:normal;color:var(--rose)}
 .faq{background:#fff}
 .faq-grid{display:grid;grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);gap:clamp(38px,6vw,82px);align-items:start}
 .faq-intro p{max-width:400px;color:var(--muted)}
-.faq-intro img{width:100%;max-width:460px;aspect-ratio:1.55/1;object-fit:cover;margin-top:30px;border-radius:5px;box-shadow:12px 12px 0 var(--cream)}
+.faq-intro img{display:block;width:100%;max-width:460px;height:auto;aspect-ratio:auto;object-fit:contain;margin-top:30px;border-radius:5px;box-shadow:12px 12px 0 var(--cream)}
 .faq-list details{padding:23px 0;border-bottom:1px solid var(--border)}
 .faq-list details:first-child{border-top:1px solid var(--border)}
 .faq-list summary{display:flex;align-items:center;justify-content:space-between;gap:20px;list-style:none;cursor:pointer;font:700 15px Montserrat,sans-serif}
@@ -137,12 +137,13 @@ footer{padding:65px 0 0;background:#252a26;color:#fff}
   .value-inner i{font-size:12px}
   .confianza-grid,.faq-grid,.contact-grid{grid-template-columns:1fr;gap:34px}
   .confianza-image{order:2}.confianza-content{order:1}
-  .confianza-image img{aspect-ratio:1.25/1;box-shadow:9px 9px 0 var(--cream)}
+  .confianza-image img{aspect-ratio:2/1;object-fit:contain;box-shadow:9px 9px 0 var(--cream)}
   .section-head{display:block;margin-bottom:30px}
   .section-head>p{margin-top:17px}
   .cards{grid-template-columns:1fr;gap:12px}
   .service-card{min-height:220px;padding:25px}
-  .statement{padding:62px 0;background-position:58% center;background-image:linear-gradient(rgba(247,243,241,.88),rgba(247,243,241,.84)),url("assets/nuestro-compromiso-burgos.jpg")}
+  .statement{padding:62px 0;background-position:58% center;background-image:linear-gradient(rgba(250,247,243,.42),rgba(250,247,243,.34)),url("assets/nuestro-compromiso-burgos.jpg")}
+  .statement-inner{padding:24px 18px;background:rgba(255,255,255,.55)}
   .faq-intro img{max-width:100%;margin-top:20px}
   .faq-list summary{font-size:14px}
   .map{height:300px}
