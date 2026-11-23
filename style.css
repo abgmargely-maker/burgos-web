@@ -176,3 +176,18 @@ footer{padding:65px 0 0;background:#252a26;color:#fff}
   html{scroll-behavior:auto}
   *,*::before,*::after{transition:none!important}
 }
+
+
+/* Iconos SVG editoriales de trazo fino */
+.icon-editorial{width:17px;height:17px;flex:none;display:inline-block;vertical-align:middle}
+.value-inner .icon-editorial{width:15px;height:15px;color:#f4e8e7}
+.trust-list .icon-editorial{width:16px;height:16px;color:var(--green);margin-top:3px}
+.text-link .icon-editorial{width:15px;height:15px}
+.service-card .icon-service{width:30px;height:30px;color:var(--rose);margin:8px 0 20px;flex:none}
+.service-card button .icon-editorial{width:14px;height:14px;margin-left:6px;transition:transform .2s}
+.service-card button:hover .icon-editorial{transform:translateX(4px)}
+.statement .btn-primary .icon-editorial{width:15px;height:15px}
+.contact-item .icon-editorial{width:18px;height:18px;margin-top:4px;color:var(--green)}
+.contact-info .btn-primary .icon-editorial{width:16px;height:16px}
+.chatbot-toggle .icon-editorial{width:28px;height:28px}
+.chat-header button .icon-editorial{width:20px;height:20px}
