@@ -161,3 +161,13 @@
   .business-step{grid-template-columns:42px 1fr;padding:14px}
   .business-step .step-no{width:38px;height:38px}
 }
+
+
+/* Iconos SVG editoriales de trazo fino */
+.business-pillar .icon-editorial{width:22px;height:22px;color:var(--rose);flex:none}
+.business-card-icon .icon-biz-card{width:22px;height:22px;color:var(--rose);flex:none}
+.business-card .card-contact .icon-editorial{width:14px;height:14px;transition:transform .2s}
+.business-card .card-contact:hover .icon-editorial{transform:translateX(4px)}
+.business-mode .icon-biz-mode{display:block;width:24px;height:24px;color:var(--rose);margin-bottom:16px;flex:none}
+.business-region .icon-editorial{width:14px;height:14px;color:var(--rose)}
+.business-contact-item .icon-editorial{width:18px;height:18px;color:var(--green-dark);margin-top:3px;flex:none}
