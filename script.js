@@ -43,9 +43,9 @@
     link.href = "https://wa.me/529996082755?text=" + encodeURIComponent(
       `Hola, me comunico desde la página web de Burgos Abogados. Deseo asesoría sobre: ${service}.`
     );
-    const icon = document.createElement("i");
-    icon.className = "fa-brands fa-whatsapp";
-    link.append(icon, document.createTextNode(" Continuar por WhatsApp"));
+    const iconWrap = document.createElement("span");
+    iconWrap.innerHTML = '<svg class="icon-editorial" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21"/><path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"/></svg>';
+    link.append(iconWrap.firstElementChild, document.createTextNode(" Continuar por WhatsApp"));
 
     response.append(message, link);
     response.scrollIntoView({ block: "nearest", behavior: "smooth" });
@@ -56,8 +56,3 @@
   });
 })();
 
-
-  document.querySelectorAll("[data-service]").forEach(button => {
-    button.addEventListener("click", () => choose(button.dataset.service));
-  });
-})();
